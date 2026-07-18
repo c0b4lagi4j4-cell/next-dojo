@@ -4,38 +4,58 @@ import path from 'path';
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
 
-// Cache PDF supaya tidak dibaca berulang-ulang
-let pdfCache: string | null = null;
+// Simple memory cache untuk file yang sudah pernah dibaca agar tidak terus membaca dari disk
+const fileCache: Record<string, string> = {};
 
-function getPdfContext(): string {
-  if (pdfCache !== null) return pdfCache;
-  
+function getPdfContext(message: string): string {
   let result = '';
   const refDir = path.join(process.cwd(), 'referensi');
+  const msg = message.toLowerCase();
   
+  // Heuristik Deteksi Topik
+  const isKata = msg.includes('kata') || msg.includes('bunkai') || msg.includes('enpi') || msg.includes('unsu');
+  const isKumite = msg.includes('kumite') || msg.includes('yuko') || msg.includes('waza') || msg.includes('ippon') || msg.includes('senshu') || msg.includes('chui') || msg.includes('hansoku');
+  const isPara = msg.includes('para') || msg.includes('kursi roda') || msg.includes('wheelchair');
+  const isProtest = msg.includes('protes') || msg.includes('video') || msg.includes('vr');
+  
+  // Daftar file yang wajib dimuat sebagai dasar (hanya rule umum & wasit agar konteks tidak hilang)
+  const filesToLoad = new Set<string>();
+  filesToLoad.add('WKF_Referee_Rules_2025.pdf.txt');
+  filesToLoad.add('WKF_GENERAL_REGULATIONS_vf.pdf.txt');
+
+  // Muat file spesifik jika terdeteksi
+  if (isKata) filesToLoad.add('WKF Kata Competition Rules 2026 MASTER COPY_V2.pdf.txt');
+  if (isKumite) filesToLoad.add('WKF 2026 Kumite Competition Rules MASTER COPY_V11.pdf.txt');
+  if (isPara) filesToLoad.add('WKF 2026 Para Karate Competition Rules MASTER COPY_V2.pdf.txt');
+  if (isProtest) filesToLoad.add('Guidelines for Handling an official protest at WKF Events_180326.pdf.txt');
+
+  // Jika tidak ada topik yang terdeteksi, jadikan Kumite sebagai default karena paling sering ditanya
+  if (!isKata && !isKumite && !isPara && !isProtest) {
+    filesToLoad.add('WKF 2026 Kumite Competition Rules MASTER COPY_V11.pdf.txt');
+  }
+
   try {
     if (fs.existsSync(refDir)) {
       const files = fs.readdirSync(refDir);
       for (const file of files) {
-        if (file.endsWith('.txt')) {
-          const content = fs.readFileSync(path.join(refDir, file), 'utf8');
-          result += content + '\n';
+        if (filesToLoad.has(file)) {
+          if (!fileCache[file]) {
+             fileCache[file] = fs.readFileSync(path.join(refDir, file), 'utf8');
+          }
+          result += fileCache[file] + '\n';
         }
       }
     }
   } catch { /* ignore */ }
 
   if (result.trim()) {
-    pdfCache = `\n\nBERIKUT ADALAH DOKUMEN REFERENSI MUTLAK (BUKU PERATURAN WKF 2026):\n` +
+    return `\n\nBERIKUT ADALAH DOKUMEN REFERENSI MUTLAK (BUKU PERATURAN WKF 2026):\n` +
       `==========================================================\n${result}\n` +
       `==========================================================\n` +
       `ATURAN MUTLAK: Jika jawaban dari pertanyaan pengguna TIDAK TERDAPAT secara eksplisit di dalam dokumen Referensi di atas, ` +
       `Anda WAJIB menjawab: 'Maaf, saya tidak menemukan informasi tersebut di buku peraturan WKF 2026'. JANGAN MENEBAK.`;
-  } else {
-    pdfCache = '';
   }
-
-  return pdfCache;
+  return '';
 }
 
 function writeViolationLog(msg: string) {
@@ -102,7 +122,7 @@ ONBOARDING:
 5. Kutipan peraturan WKF → wajib dalam format blockquote markdown (diawali '>').
 
 ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF 2026.
-${getPdfContext()}`;
+${getPdfContext(message)}`;
 
     // Bangun riwayat percakapan
     const contents = [

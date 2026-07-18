@@ -1,0 +1,372 @@
+[
+  {
+    "question": "Jika seorang atlet melangkah ke luar area pertandingan (JOGAI) saat sisa waktu pertandingan kurang dari 15 detik, atlet tersebut akan langsung didiskualifikasi (SHIKKAKU).",
+    "answer": "Salah",
+    "explanation": "Jogai (keluar area) kurang dari 15 detik akan diberikan penalti standar (Chui), bukan Shikkaku (Diskualifikasi). Shikkaku hanya untuk pelanggaran berat atau niat mencederai."
+  },
+  {
+    "question": "Poin YUKO (1 angka) diberikan untuk pukulan yang mengenai area wajah atau tubuh lawan dengan teknik yang benar.",
+    "answer": "Benar",
+    "explanation": "Yuko bernilai 1 poin dan diberikan untuk teknik pukulan (Tsuki) yang sah ke arah kepala, leher, atau tubuh."
+  },
+  {
+    "question": "Seorang pelatih (Coach) diizinkan untuk memberikan instruksi teknis kepada atletnya saat pertandingan sedang berlangsung tanpa batas.",
+    "answer": "Salah",
+    "explanation": "Pelatih tidak boleh memberikan instruksi saat pertandingan berjalan. Instruksi hanya boleh diberikan saat wasit menghentikan sementara pertandingan (YAME) atau dari area yang telah ditentukan."
+  },
+  {
+    "question": "Dalam pertandingan KATA individu, atlet wajib menampilkan Bunkai (aplikasi teknik) pada perebutan medali.",
+    "answer": "Benar",
+    "explanation": "Menurut aturan WKF terbaru, Bunkai (aplikasi aplikasi teknik KATA) diwajibkan dalam perebutan medali untuk nomor Kata Beregu (Team Kata)."
+  },
+  {
+    "question": "Senshu (keuntungan poin pertama) akan dibatalkan jika atlet yang memegang Senshu melakukan pelanggaran kategori 2 (Category 2) di 15 detik terakhir.",
+    "answer": "Benar",
+    "explanation": "Jika pemegang Senshu mendapat penalti (misalnya lari menghindari pertarungan) di 15 detik terakhir, Senshu miliknya akan dibatalkan."
+  },
+  {
+    "question": "Teknik bantingan (Nage) yang tidak diikuti dengan teknik poin tambahan tidak akan membuahkan nilai IPPON (3 angka).",
+    "answer": "Benar",
+    "explanation": "Bantingan saja tidak menghasilkan poin. Atlet harus menyusul dengan teknik yang sah (misalnya tsuki atau keri) agar bisa mendapat poin IPPON."
+  },
+  {
+    "question": "Seorang atlet yang menggunakan kacamata biasa diizinkan untuk bertanding di kategori Kumite.",
+    "answer": "Salah",
+    "explanation": "Kacamata biasa dilarang keras dalam Kumite demi keselamatan. Lensa kontak lunak diizinkan dengan risiko ditanggung sendiri oleh atlet."
+  },
+  {
+    "question": "Wasit memiliki hak penuh untuk menghentikan pertandingan jika melihat pakaian karate (Gi) atlet tidak sesuai standar atau berbahaya.",
+    "answer": "Benar",
+    "explanation": "Kerapian dan standar Gi adalah syarat wajib. Wasit akan meminta atlet merapikan atau mengganti perlengkapan jika tidak sesuai standar keselamatan."
+  },
+  {
+    "question": "Poin WAZA-ARI (2 angka) diberikan untuk tendangan yang mengenai bagian perut atau punggung lawan.",
+    "answer": "Benar",
+    "explanation": "Waza-Ari (2 poin) diberikan untuk teknik tendangan (Chudan Geri) yang mengenai bagian perut, dada, atau punggung."
+  },
+  {
+    "question": "Pelatih boleh masuk ke dalam area tatami (pertandingan) kapan saja jika tidak setuju dengan keputusan wasit.",
+    "answer": "Salah",
+    "explanation": "Pelatih dilarang memasuki area tatami. Protes (Video Review) diajukan menggunakan kartu VR atau secara tertulis melalui prosedur resmi, bukan dengan masuk ke lapangan."
+  },
+  {
+    "question": "Dalam Kata Beregu (Team Kata), ketiga anggota tim harus selalu memulai kata dengan menghadap ke arah yang sama persis (Tatat Homen).",
+    "answer": "Benar",
+    "explanation": "Sesuai aturan, tim harus memulai dengan orientasi menghadap posisi depan yang sama."
+  },
+  {
+    "question": "Mubobi (kelalaian pertahanan diri) adalah ketika seorang atlet maju menyerang tanpa melindungi dirinya sendiri dengan benar, dan dapat dikenakan penalti.",
+    "answer": "Benar",
+    "explanation": "Mubobi adalah tindakan membahayakan diri sendiri dan merupakan pelanggaran karena kurangnya perlindungan diri dasar."
+  },
+  {
+    "question": "Teknik sapuan kaki (Ashi Barai) boleh dilakukan setinggi lutut lawan.",
+    "answer": "Salah",
+    "explanation": "Sapuan kaki atau teknik menjatuhkan hanya boleh mengenai pergelangan kaki hingga di bawah lutut (area betis bawah)."
+  },
+  {
+    "question": "Pertandingan Kumite kategori Senior Putra memakan waktu bersih 3 menit.",
+    "answer": "Benar",
+    "explanation": "Durasi pertandingan kumite untuk Senior Putra dan Putri adalah 3 menit waktu efektif (stopwatch berhenti saat YAME)."
+  },
+  {
+    "question": "Jika waktu pertandingan habis dan skor sama (tie), pemenang akan ditentukan oleh perpanjangan waktu (Encho-Sen).",
+    "answer": "Salah",
+    "explanation": "WKF tidak lagi menggunakan Encho-Sen secara umum. Jika seri, kemenangan ditentukan oleh Senshu, dan jika tidak ada Senshu, pemenang ditentukan oleh keputusan wasit dan juri (Hantei)."
+  },
+  {
+    "question": "Poin IPPON diberikan untuk teknik tendangan yang mengenai kepala, leher, atau wajah (Jodan Geri).",
+    "answer": "Benar",
+    "explanation": "Tendangan Jodan yang sah bernilai 3 angka (Ippon)."
+  },
+  {
+    "question": "Seorang atlet yang mengalami cedera dan mengeluarkan darah ringan tidak boleh melanjutkan pertandingan dalam keadaan apapun.",
+    "answer": "Salah",
+    "explanation": "Atlet dengan cedera ringan masih boleh melanjutkan pertandingan SETELAH mendapat izin medis dari dokter pertandingan."
+  },
+  {
+    "question": "Peringatan Chukoku diberikan untuk pelanggaran ringan atau kecil yang pertama kali dilakukan.",
+    "answer": "Benar",
+    "explanation": "Chukoku adalah peringatan pertama untuk pelanggaran ringan sebelum naik ke level penalti yang lebih berat."
+  },
+  {
+    "question": "Jika seorang atlet jatuh, ia diberi waktu maksimal 10 detik (10-second rule) untuk berdiri sendiri; jika tidak, ia akan didiskualifikasi dari seluruh turnamen.",
+    "answer": "Benar",
+    "explanation": "Aturan 10 detik berlaku jika seorang atlet terjatuh/terlempar dan tidak segera berdiri. Jika lebih dari 10 detik, dokter akan memeriksa dan atlet tidak boleh bertanding kumite lagi di turnamen itu (aturan keselamatan medis)."
+  },
+  {
+    "question": "Dalam Kumite beregu, jika sebuah tim memenangkan 3 partai dari total 5 partai lebih awal, pertandingan sisa tidak perlu dimainkan lagi.",
+    "answer": "Benar",
+    "explanation": "Sistem beregu memakai konsep kemenangan mayoritas. Jika salah satu tim sudah menang secara matematis (mayoritas partai), pertandingan sisa bisa dihentikan/tidak dimainkan."
+  },
+  {
+    "question": "Protektor badan (Body Protector) wajib dikenakan oleh seluruh atlet Kumite WKF.",
+    "answer": "Benar",
+    "explanation": "Penggunaan pelindung badan standar WKF adalah kewajiban mutlak demi keselamatan atlet."
+  },
+  {
+    "question": "Jika atlet melakukan bantingan di luar area tatami (Jogai), teknik tersebut tetap dinilai asalkan lawannya mendarat di dalam.",
+    "answer": "Salah",
+    "explanation": "Teknik yang dieksekusi saat atlet berada di luar batas tatami (Jogai) tidak akan dinilai dan dianggap tidak sah."
+  },
+  {
+    "question": "Pelatih wajib mengenakan seragam olahraga resmi (tracksuit) nasional atau klub mereka dan sepatu olahraga bersih selama turnamen.",
+    "answer": "Benar",
+    "explanation": "Kode berpakaian WKF mengharuskan pelatih tampil profesional mengenakan seragam olahraga resmi (tracksuit) dan sepatu olahraga."
+  },
+  {
+    "question": "Dalam nomor Kata, atlet boleh menggunakan variasi gerakan yang tidak terdaftar di silabus aliran resmi asalkan terlihat estetik.",
+    "answer": "Salah",
+    "explanation": "Setiap gerakan Kata harus berdasar kuat pada versi tradisional dari ryu-ha (aliran) yang terdaftar, variasi teatrikal yang keluar dari pakem akan mengurangi nilai atau didiskualifikasi."
+  },
+  {
+    "question": "Senshu diberikan kepada atlet pertama yang berhasil mencetak poin yang sah.",
+    "answer": "Benar",
+    "explanation": "Senshu adalah keuntungan atau previlese bagi atlet yang berhasil mendapatkan skor sah terlebih dahulu dalam suatu pertandingan."
+  },
+  {
+    "question": "Pelatih diperbolehkan mengajukan protes Video Review (VR) untuk pelanggaran Jogai.",
+    "answer": "Salah",
+    "explanation": "Protes Video Review (VR) hanya dapat diajukan oleh pelatih untuk mengklaim poin bagi atletnya, bukan untuk meminta penalti atau pelanggaran seperti Jogai."
+  },
+  {
+    "question": "Seorang atlet yang berpura-pura cedera untuk mengambil keuntungan waktu akan dikenakan penalti Shikkaku.",
+    "answer": "Benar",
+    "explanation": "Berpura-pura cedera adalah pelanggaran etika olahraga tingkat tinggi dan atlet tersebut dapat langsung menerima Shikkaku (Diskualifikasi)."
+  },
+  {
+    "question": "Pertandingan Kata dievaluasi secara terpisah menjadi dua kriteria: Performa Teknis (70%) dan Performa Atletik (30%).",
+    "answer": "Benar",
+    "explanation": "Sistem penjurian Kata terbaru membagi skor berdasarkan bobot Teknis (kuda-kuda, teknik, transisi) sebesar 70% dan Atletik (kecepatan, kekuatan, keseimbangan) sebesar 30%."
+  },
+  {
+    "question": "Seorang pelatih boleh membawa alat komunikasi elektronik (seperti walkie talkie atau earphone) ke kursi pelatih.",
+    "answer": "Salah",
+    "explanation": "Dilarang keras membawa atau menggunakan alat komunikasi elektronik di kursi pelatih untuk menghindari gangguan atau kecurangan."
+  },
+  {
+    "question": "Teknik pukulan yang mendarat tepat pada area tenggorokan (leher depan) diizinkan selama tidak mencederai.",
+    "answer": "Salah",
+    "explanation": "Setiap kontak, sekecil apapun, ke area tenggorokan dilarang keras dan akan langsung berbuah penalti."
+  },
+  {
+    "question": "Jika seorang atlet tidak merespon panggilan untuk bertanding setelah dipanggil 3 kali dalam waktu 1 menit, ia akan didiskualifikasi (Kiken).",
+    "answer": "Benar",
+    "explanation": "Kiken (Diskualifikasi karena tidak hadir) diterapkan jika atlet tidak muncul dalam waktu 1 menit setelah dipanggil."
+  },
+  {
+    "question": "Pelindung gigi (Mouthguard) dapat menggunakan desain bergambar taring atau kata-kata agresif asalkan ukurannya pas.",
+    "answer": "Salah",
+    "explanation": "Mouthguard harus transparan atau polos tanpa desain aneh/agresif untuk menjaga etika olahraga."
+  },
+  {
+    "question": "Jika dua atlet mencetak poin secara bersamaan persis, wasit akan memberikan poin kepada keduanya (Aiuchi).",
+    "answer": "Salah",
+    "explanation": "Dalam aturan terbaru, poin Aiuchi (serangan poin bersamaan) berarti kedua teknik tersebut batal dinilai, tidak ada yang mendapat poin."
+  },
+  {
+    "question": "Seorang atlet boleh menolak berjabat tangan atau memberikan hormat pada akhir pertandingan jika ia merasa dicurangi.",
+    "answer": "Salah",
+    "explanation": "Menolak memberi hormat adalah pelanggaran moral dan etika (Rei) dan berpotensi membuahkan diskualifikasi (Shikkaku)."
+  },
+  {
+    "question": "Untuk kategori Kata Beregu, durasi maksimal untuk membawakan Kata dan Bunkai adalah 5 menit.",
+    "answer": "Benar",
+    "explanation": "Tim Kata Beregu memiliki batas waktu total 5 menit untuk memperagakan Kata sekaligus aplikasi tekniknya (Bunkai)."
+  },
+  {
+    "question": "Poin WAZA-ARI dapat diraih dari serangan pukulan ke area punggung tanpa harus menendang.",
+    "answer": "Salah",
+    "explanation": "Pukulan ke arah punggung hanya dinilai Yuko (1 poin). Waza-Ari (2 poin) wajib berupa tendangan ke area badan/punggung."
+  },
+  {
+    "question": "Sabuk yang dipakai atlet saat bertanding hanya boleh berwarna Merah (Aka) atau Biru (Ao).",
+    "answer": "Benar",
+    "explanation": "Atlet diwajibkan memakai sabuk merah dan biru sesuai warna sudut mereka; sabuk asli seperti sabuk hitam tidak boleh dipakai saat berlaga."
+  },
+  {
+    "question": "Di kelas Junior, segala jenis kontak ke arah wajah (Face Contact) yang terlihat keras meskipun tidak berdarah akan otomatis menjadi penalti.",
+    "answer": "Benar",
+    "explanation": "Kelas Kadet dan Junior menerapkan larangan mutlak terhadap kontak fisik ke wajah; teknik harus ditarik tepat sebelum menyentuh kulit wajah (Skin Touch)."
+  },
+  {
+    "question": "Pelatih yang diusir dari arena oleh wasit dapat mengajukan protes tertulis agar bisa kembali duduk di pertandingan selanjutnya.",
+    "answer": "Salah",
+    "explanation": "Pelatih yang diusir akan kehilangan hak mendampingi atlet selama sisa turnamen atau sesi tersebut tergantung keputusan dewan disiplin."
+  },
+  {
+    "question": "Saat mengajukan Video Review (VR), jika protes pelatih dibenarkan, kartu VR akan dikembalikan kepadanya.",
+    "answer": "Benar",
+    "explanation": "Jika protes VR sukses (klaim poin diterima), pelatih mendapatkan hak protesnya kembali untuk digunakan nanti."
+  },
+  {
+    "question": "Jika protes VR pelatih ditolak oleh Video Review Supervisor, pelatih akan kehilangan hak mengajukan VR untuk sisa pertandingan tersebut.",
+    "answer": "Benar",
+    "explanation": "Satu kali penolakan VR berarti pelatih kehilangan kartu (kuota) VR-nya untuk pertarungan tersebut."
+  },
+  {
+    "question": "Pita rambut (Hairband) yang terbuat dari bahan logam diizinkan dalam Kumite asalkan dilapisi pelindung.",
+    "answer": "Salah",
+    "explanation": "Segala aksesoris logam termasuk jepit rambut berbahan metal sangat dilarang dipakai karena berpotensi mencederai diri sendiri maupun lawan."
+  },
+  {
+    "question": "Dalam Kata individu, atlet akan gugur (Diskualifikasi) jika ia menghentikan gerakan di tengah-tengah peragaan.",
+    "answer": "Benar",
+    "explanation": "Berhenti dan menyerah di tengah-tengah performa Kata akan menghasilkan diskualifikasi langsung pada putaran tersebut."
+  },
+  {
+    "question": "Jika atlet mengalami patah tulang akibat bantingan lawan yang disengaja ke luar batas normal, lawan akan dihukum Shikkaku.",
+    "answer": "Benar",
+    "explanation": "Tindakan mencederai atlet secara ekstrem akibat bantingan berbahaya atau niat jahat selalu membuahkan Shikkaku."
+  },
+  {
+    "question": "Saat wasit berteriak 'YAME', semua aksi setelah suara tersebut tetap akan dinilai jika berbuah poin.",
+    "answer": "Salah",
+    "explanation": "Semua teknik yang mendarat setelah perintah 'Yame' (berhenti) tidak akan dihitung, bahkan bisa berbuah penalti jika disengaja."
+  },
+  {
+    "question": "Ketua tim medis turnamen (Tournament Doctor) berhak melarang seorang atlet untuk melanjutkan kompetisi meskipun atlet tersebut merasa masih kuat.",
+    "answer": "Benar",
+    "explanation": "Rekomendasi dokter pertandingan bersifat final dan mengikat. Jika dokter menilai bahaya medis, atlet tidak bisa membantah."
+  },
+  {
+    "question": "Seorang atlet Para-Karate pengguna kursi roda diwajibkan mengikat tubuhnya (strapping) ke kursi roda dengan standar yang sangat longgar.",
+    "answer": "Salah",
+    "explanation": "Atlet Para-Karate wajib mengikat kaki dan area tertentu ke kursi rodanya secara aman dan kuat sesuai panduan keselamatan WKF, bukan longgar."
+  },
+  {
+    "question": "Penilaian poin IPPON selalu melibatkan teknik tendangan ke area Jodan.",
+    "answer": "Salah",
+    "explanation": "Selain Jodan Geri, bantingan/sapuan kaki yang sah (menjatuhkan lawan) diikuti serangan pencetak poin (tsuki) juga dinilai IPPON."
+  },
+  {
+    "question": "Jika dua atlet berpelukan/clinch tanpa niat melakukan teknik sapuan atau lemparan, wasit akan memisahkannya setelah 2 detik.",
+    "answer": "Benar",
+    "explanation": "Clinch (merangkul/menggenggam) hanya diizinkan sebentar (maksimal sekitar 2 detik) sebagai transisi bantingan. Jika pasif, wasit wajib memisahkan (Yame)."
+  },
+  {
+    "question": "Terdapat larangan keras terhadap pelatih (Coach) untuk memprovokasi atau meneriaki juri agar memberikan nilai pada atletnya.",
+    "answer": "Benar",
+    "explanation": "Perilaku memprovokasi atau mendikte ofisial sangat melanggar etika dan bisa berakibat pengusiran pelatih (Shikkaku)."
+  },
+  {
+    "question": "Dalam nomor Kumite beregu putra, setiap tim terdiri atas maksimal 7 anggota dengan 5 orang yang bertanding per babak.",
+    "answer": "Benar",
+    "explanation": "Tim kumite putra WKF terdiri atas maksimal 7 atlet (5 inti dan 2 cadangan)."
+  },
+  {
+    "question": "Sistem Video Review (VR) dapat diinisiasi langsung oleh wasit tengah jika ia merasa ragu.",
+    "answer": "Salah",
+    "explanation": "Protes Video Review hanya dapat dipicu oleh pengajuan Kartu VR dari Pelatih, bukan inisiatif wasit tengah."
+  },
+  {
+    "question": "Jika waktu habis, dan skor 0-0 tanpa Senshu, kemenangan Hantei ditentukan lewat suara voting dari 4 Juri sudut (Judges). Wasit tengah (Referee) tidak memiliki hak suara dalam sistem terbaru.",
+    "answer": "Benar",
+    "explanation": "Dalam aturan terbaru sistem Hantei WKF, keempat Juri (Judges) di sudut akan memilih bendera, wasit tengah tidak ikut mem-voting."
+  },
+  {
+    "question": "Kei-Koku adalah bentuk diskualifikasi langsung di tengah pertandingan.",
+    "answer": "Salah",
+    "explanation": "Kei-Koku bukanlah kata dalam aturan resmi WKF saat ini; level peringatan WKF meliputi Chukoku, Chui, Hansoku-Chui, dan Hansoku (serta Shikkaku)."
+  },
+  {
+    "question": "Dalam Kumite, atlet yang secara konstan keluar dari area pertandingan (Jogai) hingga 4 kali akan mendapatkan Hansoku.",
+    "answer": "Benar",
+    "explanation": "Penalti diakumulasi. Keluar garis (Jogai) yang ke-4 kalinya akan berakibat pada pemberian Hansoku (Diskualifikasi dari pertandingan tersebut)."
+  },
+  {
+    "question": "Pelindung dada (Chest Protector) untuk atlet putri diwajibkan dipakai di luar baju seragam (Gi).",
+    "answer": "Salah",
+    "explanation": "Chest protector untuk putri wajib dipakai di dalam/di bawah baju seragam (Gi) karate."
+  },
+  {
+    "question": "Atlet yang mendaftar kejuaraan WKF di kelas Kadet adalah mereka yang berusia 14 hingga 15 tahun.",
+    "answer": "Benar",
+    "explanation": "Batas usia resmi untuk kategori Kadet di WKF adalah 14 dan 15 tahun saat tanggal dimulainya kompetisi."
+  },
+  {
+    "question": "Saat melakukan Kata, atlet diperbolehkan mengucapkan nama Kata dengan suara pelan atau bahkan dalam hati agar lebih konsentrasi.",
+    "answer": "Salah",
+    "explanation": "Atlet diwajibkan mengucapkan/memproklamirkan nama Kata dengan suara yang lantang dan jelas ke arah ofisial meja sebelum memulainya."
+  },
+  {
+    "question": "Pelatih boleh berdiri dari kursinya (Coach Chair) untuk merayakan kemenangan saat pertandingan masih berlangsung.",
+    "answer": "Salah",
+    "explanation": "Selama pertandingan berlangsung, pelatih harus tetap dalam posisi duduk yang tenang dan dilarang masuk ke tatami atau berdiri mendekati lapangan."
+  },
+  {
+    "question": "Poin untuk tendangan (Keri) yang mengenai bagian lengan (Makiwara) lawan yang terangkat adalah Yuko.",
+    "answer": "Salah",
+    "explanation": "Serangan yang mengenai lengan tidak mendapatkan nilai. Serangan harus mendarat pada area tubuh/target yang sah (kepala, wajah, leher, dada, punggung, perut)."
+  },
+  {
+    "question": "Seorang wasit berhak mengubah skor secara sepihak jika dia yakin 2 juri sudut lainnya salah menekan tombol (joystick).",
+    "answer": "Salah",
+    "explanation": "Wasit tengah tidak boleh mengubah skor yang sudah dimasukkan oleh sistem mayoritas juri. Ia hanya mengumumkan skor yang dikonfirmasi oleh sistem elektronik berdasarkan suara juri."
+  },
+  {
+    "question": "Kuku tangan dan kaki atlet harus dipotong pendek agar tidak melukai lawan.",
+    "answer": "Benar",
+    "explanation": "Ini adalah protokol kebersihan dan keselamatan dasar dalam karate kompetitif. Kuku tajam dilarang keras."
+  },
+  {
+    "question": "Terdapat larangan keras terhadap atlet untuk memakai perhiasan apapun (cincin, kalung, anting) saat bertanding.",
+    "answer": "Benar",
+    "explanation": "Seluruh perhiasan harus dilepas tanpa terkecuali untuk mencegah luka fatal tergores saat berbenturan fisik."
+  },
+  {
+    "question": "Dalam Kumite, poin tidak akan dihitung jika teknik serangan tersebut dianggap terlalu lemah atau tidak memiliki potensi merusak secara teori karate (Kime).",
+    "answer": "Benar",
+    "explanation": "Semua poin harus memenuhi 6 kriteria penilaian WKF (salah satunya adalah Vigorous Application / Aplikasi Bertenaga atau Kime) agar sah."
+  },
+  {
+    "question": "Jika seorang atlet tidak menggunakan sabuk sesuai standar WKF (misalnya terdapat garis emas), ia akan langsung didiskualifikasi tanpa teguran.",
+    "answer": "Salah",
+    "explanation": "Wasit akan memberikan peringatan dan waktu (biasanya 1 menit) bagi atlet untuk mengganti perlengkapannya agar sesuai aturan, sebelum didiskualifikasi (Kiken)."
+  },
+  {
+    "question": "Dalam Kata, juri akan memotong poin atlet jika ia mengeluarkan suara napas yang berlebihan, teatrikal, atau tidak alami (Hissing).",
+    "answer": "Benar",
+    "explanation": "Suara pernapasan yang sengaja dibuat-buat (teatrikal) atau berlebihan saat Kata adalah pengurangan nilai dalam kriteria performa teknis."
+  },
+  {
+    "question": "Pelatih wajib mengajukan formulir protes resmi maksimal 1 jam setelah insiden terjadi jika VR tidak digunakan.",
+    "answer": "Salah",
+    "explanation": "Protes tertulis resmi harus diserahkan oleh manajer/pelatih kepada Dewan Juri secepatnya setelah partai usai (biasanya batas waktu ketat hanya beberapa menit pasca-partai)."
+  },
+  {
+    "question": "Pukulan Chudan (ke perut) bernilai sama (1 poin) dengan pukulan Jodan (ke kepala).",
+    "answer": "Benar",
+    "explanation": "Semua teknik pukulan tangan yang sah, baik Chudan (badan) maupun Jodan (kepala), bernilai YUKO (1 poin)."
+  },
+  {
+    "question": "Jika atlet melakukan sapuan kaki namun lawannya tidak terjatuh, wasit tidak akan memberikan penalti asalkan teknik tersebut bersih.",
+    "answer": "Benar",
+    "explanation": "Ashi-barai (sapuan) yang gagal menjatuhkan lawan tidak dihukum selama teknik tersebut diarahkan ke pergelangan kaki dan tidak bermaksud menendang lutut."
+  },
+  {
+    "question": "Di nomor Kata beregu putri, tim dibebaskan dari keharusan melakukan Bunkai demi alasan keamanan.",
+    "answer": "Salah",
+    "explanation": "Sama seperti putra, regu putri wajib melakukan demonstrasi Bunkai (aplikasi teknis nyata) di babak perebutan medali."
+  },
+  {
+    "question": "Jika wasit utama (Referee) tidak melihat ada teknik poin yang masuk, namun kedua juri sudut (Judges) mengibarkan bendera/tombol memvalidasi skor, skor tersebut sah.",
+    "answer": "Benar",
+    "explanation": "Dalam sistem 2 atau 4 juri, kesepakatan mayoritas juri (minimal 2 juri jika menggunakan 4 juri) sudah cukup memvalidasi poin, meskipun wasit tengah tidak melihatnya."
+  },
+  {
+    "question": "Hansoku adalah hukuman diskualifikasi dari suatu turnamen (seluruh kategori).",
+    "answer": "Salah",
+    "explanation": "Hansoku adalah diskualifikasi dari pertarungan yang SEDANG BERLANGSUNG (Match). Shikkaku adalah diskualifikasi dari SELURUH TURNAMEN."
+  },
+  {
+    "question": "Pelatih yang ketahuan menyelundupkan alat pacu detak jantung elektronik ke baju atletnya akan diberi hukuman peringatan Chui.",
+    "answer": "Salah",
+    "explanation": "Ini adalah pelanggaran etika dan teknis tingkat tinggi, pelatih akan segera diberi Shikkaku dan atlet bisa didiskualifikasi."
+  },
+  {
+    "question": "Apabila pelatih tidak setuju terhadap nilai yang ditarik oleh wasit utama karena pelanggaran teknis di batas lapangan, pelatih berhak masuk dan memberikan intervensi lisan.",
+    "answer": "Salah",
+    "explanation": "Pelatih dilarang keras melakukan intervensi verbal ke dalam arena atau berbicara langsung ke wasit utama."
+  }
+]
