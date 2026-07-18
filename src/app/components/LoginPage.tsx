@@ -41,13 +41,14 @@ export default function LoginPage({ onLogin }: { onLogin: (p: UserProfile) => vo
           min-height: 100dvh;
           width: 100%;
           display: flex;
-          align-items: center;
-          justify-content: center;
+          flex-direction: column;
           background: #0e1621;
           padding: 24px 16px;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          overflow-y: auto;
         }
         .login-card {
+          margin: auto;
           width: 100%;
           max-width: 440px;
           background: #17212b;
@@ -59,6 +60,13 @@ export default function LoginPage({ onLogin }: { onLogin: (p: UserProfile) => vo
         @keyframes fadeUp {
           from { opacity: 0; transform: translateY(24px); }
           to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 480px) {
+          .login-root { padding: 16px 12px; }
+          .login-card { padding: 28px 24px; border-radius: 16px; }
+          .login-logo .emoji { font-size: 48px; margin-bottom: 8px; }
+          .login-logo h1 { font-size: 18px; }
+          .login-greeting { font-size: 13px; padding: 12px; margin-bottom: 24px; }
         }
         .login-logo {
           text-align: center;
