@@ -1,0 +1,1225 @@
+Rules Version 2026.0  - 1 -  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ WORLD KARATE FEDERATION  
+PARA KARATE  
+KATA COMPETITION RULES  
+  
+     Valid from 1.1.2026  
+ 
+ 
+  
+
+Rules Version 2026.0  - 2 - CONTENT 
+INTRODUCTION - 3 -  
+ARTICLE 1: PARA KARATE KATA COMPETITION - 4 -  
+ARTICLE 2: DISCIPLINE, CATEGORIES AND SPORT CLASSES - 5 -  
+ARTICLE 3:  KATA COMPETITION AREA - 8 -  
+ARTICLE 4:  OFFICIAL ATTIRE - 9 -  
+ARTICLE 5:  ORGANISATION OF KATA COMPETITION - 17 -  
+ARTICLE 6:  THE JUDGING PANEL - 20 -  
+ARTICLE 7:  EVALUATION - 21 -  
+ARTICLE 8:  OPERATION OF MATCHES - 25 -  
+ARTICLE 9:  OFFICIAL PROTEST - 27 -  
+ARTICLE 10:  ADAPTATION OF THESE RULES TO EVENTS OUTSIDE THE WKF OFFICIAL 
+EVENT PROGRAMME - 30 -  
+ARTICLE 11:  ISSUES NOT SPECIFICALLY COVERED BY THE RULES - 31 -  
+APPENDIX 1:  OFFICIAL KATA LIST - 32 -  
+APPENDIX 2:  KATA COMPETITION CATEGORIES - 33 -  
+APPENDIX 3:  KATA PROTEST FORM - 34 -  
+ 
+  
+Rules Version 2026.0  - 3 -  
+INTRODUCTION 
+ 
+The purpose of the Para Karate Kata Rules is to provide standardised rules for all levels of Para Karate 
+Championships promoted or recognised by the World Karate Federation (WKF), WKF Continental 
+Federations, and WKF Member National Federations. 
+ 
+These rules are intended to ensure that all matters related to Para Karate kata competitions are 
+conducted in a safe, fair, inclusive, and orderly manner, while respecting the specific needs of athletes 
+with eligible impairments and maintaining alignment with the WKF Competition Rules for kata. 
+ 
+For Para Karate, “eligibility to compete” includes both the general WKF requirements (such as age, 
+nationality and NF membership) and the sport-specific requirements determined by Classification. 
+Eligibility to compete and allocation of Sport Class are determined through the Classification process 
+described in the WKF Para Karate Classification Rules. 
+ 
+  
+Rules Version 2026.0  - 4 - ARTICLE 1: PARA KARATE KATA COMPETITION 
+1.1 Para Karate is the modality of Karate adapted for Athletes with disabilities. The Para Karate Kata 
+Competition Rules and Regulations have been formulated to preserve Athlete safety, as well as 
+to promote fair competition by means of a transparent and consistent set of standards. These 
+rules are applicable to and must be followed by all Athletes, Coaches, Classification Personnel, 
+Judges, and other Support Personnel who organise and/or participate in any WKF-recognised 
+Para Karate Competition. 
+ 
+1.2 The following Rules and Regulations are mandatory for all WKF Para Karate events, as well as 
+for other WKF-recognised competitions. Any competition that does not follow the standards of 
+these sets of Rules cannot be recognised as a WKF Para Karate Competition. 
+ 
+  
+Rules Version 2026.0  - 5 - ARTICLE 2: DISCIPLINE, CATEGORIES AND SPORT CLASSES 
+2.1. Discipline and Categories  
+2.1.1. Para Karate competitions include Individual Kata  only. Athletes compete in one of the 
+following categories, aligned with the Eligible Impairment types recognised by the IPC: 
+a. Visual Impairment – Sport Class K10  
+b. Intellectual Impairment – Sport Classes K21 and K22  
+c. Physical Impairment – Sport Class K30 
+ 
+2.1.2. Each category is divided into Sport Classes, as defined within the WKF Para Karate 
+Classification Rules , which describe how Athletes are allocated to classes based on the 
+degree to which their Eligible Impairment impacts performance of the specific activities 
+required in Kata. 
+2.1.3. Athletes with more than one Eligible Impairment may compete in only one Sport Class 
+per championship. Allocation of the Sport Class is determined according to the processes 
+described in the WKF Para Karate Classification Rules. 
+2.1.4. In Sport Classes K10 and K30, a Compensation Score  is allocated to Athletes in 
+accordance with the WKF Para Karate Classification Rules. This score reflects the extent 
+to which the Athlete’s impairment impacts performance and is added to the Judges’ Score 
+as described in the Scoring section of these rules. 
+For detailed procedures and eligibility criteria, please refer to the WKF Para Karate 
+Classification Rules. 
+ 
+2.2. Para Karate Sport Classes  
+Sport Classes are competition subcategories that group Athletes with similar activity 
+limitations resulting from their Eligible Impairment, to ensure fair and meaningful competition. 
+Sport Classes offered in WKF events are listed below by age and gender: 
+ 
+Categories  
+ 
+Kata 
+individuals for 
+athletes with Category description & MIC  Sport 
+Classes 
++16 
+ 
+ 
+ 
+Visual 
+Impairment • Athletes must meet the Minimum Impairment Criteria (MIC) for Visual Impairment  
+as defined in the WKF Para Karate Classification Rules. Mild or borderline visual 
+limitations that do not meet MIC are not eligible  for this category.  
+ 
+• Extra Score (Compensation Score)  is used to reflect the impact of the impairment on 
+kata performance.  
+ 
+• Athletes compete standing.  
+• Blindfolds are required  for all Athletes during kata performance.  
+ 
+Male K10  
+ 
+Female K10 
+ 
+ 
+ 
+ 
+ 
+ 
+Intellectual 
+Impairment • Athletes must meet the Minimum Impairment Criteria (MIC) for Intellectual 
+Impairment  as defined in the WKF Para Karate Classification Rules. Mild learning 
+difficulties or school-related problems that do not meet MIC are not eligible  for this 
+category.  
+ 
+• K21: eligibility includes documented intellectual functioning with IQ below 75  and 
+significant limitations in adaptive behaviour, in line with the Classification Rules.  
+• K22: eligibility includes IQ below 75 plus an additional significant impairment  (for 
+example a specific neurological or chromosomal condition) as specified in the WKF Para 
+Karate Classification Rules.  
+ 
+• Athletes compete standing.  
+• Athletes may perform one kata.  
+  
+ 
+ 
+ 
+Male K21 
+Male K22 
+ 
+Female K21 
+Female K22 
+Rules Version 2026.0  - 6 - • No Extra Score (Compensation Score) is used  in this category; Athletes are judged 
+solely on technical and athletic performance. 
+ 
+ 
+ 
+ 
+Physical 
+Impairment • Athletes must meet the Minimum Impairment Criteria (MIC) for Physical 
+Impairment  affecting lower limb and/or trunk function as defined in the WKF Para 
+Karate Classification Rules. Temporary injuries or mild impairments that do not meet 
+MIC are not eligible  for this category.  
+ 
+• Extra Score (Compensation Score)  is used to reflect the impact of the impairment on 
+kata performance. 
+ 
+• Athletes compete using wheelchairs .  
+ 
+Male K30  
+Female K30 
+ 
+All MIC and eligibility decisions are made through the Classification process described in the WKF Para 
+Karate Classification Rules, in accordance with the IPC Classification Code. Classification is held one 
+or two days before the event. 
+ 
+ 
+2.3 Age 
+ 
+2.3.1 Allocation of age category is determined by the age of the Athlete on the first day of competition 
+of the event.  
+2.3.2 Para Karate Kata competitions at WKF Para Karate World Championships are held in senior 
+categories only. Athletes must be at least 16 years of age on the first day of competition . 
+ 
+2.4 NF Quota per Event 
+ 
+2.4.1 Each National Federation at the WKF Para Karate World Championships may register a 
+maximum of three (3) Athletes per Sport Class.  
+2.4.2 For other WKF-recognised Para Karate events, the quota of Athletes per Sport Class and per 
+National Federation may be defined in the respective event bulletin.  
+2.4.3 Multi-sport Events such as the Global Games may apply other criteria, to be defined in their 
+respective Qualification System.  
+ 
+2.5 Nationality 
+ 
+2.5.1 With the following exceptions, only Nationals of a country may take part in the World 
+Championships and WKF official events representing their country.  
+2.5.2 As a general rule, an Athlete who has represented one country in a WKF official event or World 
+Championships cannot represent another country at an official WKF event or a World 
+Championships.  
+2.5.3 Nevertheless, if an Athlete who has taken part in one of those events obtains by marriage the 
+nationality of the spouse, they may represent the spouse’s country.  
+2.5.4 An Athlete who possesses dual nationality (i.e. one by virtue of the law of one country, the other 
+by virtue of the law of another country) may only represent one or another country as the Athlete 
+in question selects. Once having represented both countries, WKF EC approval will be 
+necessary for a further change, following a reasoned written demand by the relevant NF to the 
+WKF President.  
+2.5.5 An Athlete may represent the country of their birth and of which the Athlete is a National unless 
+they opt to take the nationality of their father or mother.  
+2.5.6 A naturalised Athlete (or one who has changed their nationality by naturalisation) may not 
+participate in the World Championships representing their new country until three years after 
+their naturalisation. The period following naturalisation may be reduced or even cancelled with 
+the agreement of the two NFs concerned and the final approval of the WKF EC.  
+Rules Version 2026.0  - 7 - 2.5.7 If an associated State, Province or Overseas Department, a Country or former Colony acquires 
+independence, or a country is incorporated within another country by reason of a change of 
+border, or if a new NF is recognised by WKF, an Athlete may continue to represent the country 
+to which they belong or belonged. However, they may choose to represent their new country or 
+their new NF in the World Championships.  
+2.5.8 In instances where the WKF has recognised more than one (1) NF for which members hold the 
+same national passport (i.e., for a country and its protectorates with separate governing national 
+sporting bodies), the Athlete may only compete for the NF of residence, provided that they have 
+not yet competed for the other NF(s) in WKF official events.  
+2.5.9 In order to obtain a transfer to another NF whose nationals hold the same passport, it is 
+sufficient that the two NFs involved agree and confirm any change to the WKF concerning the 
+status of an Athlete. In case of disagreement between the NFs, any change must be approved 
+by the WKF EC. In this case, the Athlete, through the NF concerned, must prove to the WKF’s 
+satisfaction the residency in the territory governed by the other NF, or failing this, the relationship 
+with the other NF that makes the change justifiable.  
+2.5.10 Once the Athlete has represented all the NFs involved, WKF EC approval will be necessary for 
+any further change.  
+ 
+  
+Rules Version 2026.0  - 8 - ARTICLE 3:  KATA COMPETITION AREA  
+ 
+3.1 The competition area will be a WKF Approved matted square, with sides of eight metres (measured 
+from the outside). There will be a clear safety area of two metres on each side. 
+In Para Karate competitions, the whole Competition Area – including access routes to and from the 
+tatami – must be free of any obstacle that could hinder movement or compromise the safety of 
+Athletes using wheelchairs, mobility aids, or requiring guidance. 
+3.2 In Para Karate competitions, the Judges and, where applicable, the Software Technician are 
+positioned in a single straight line  in front of the official table. They should be seated behind one 
+continuous table , with the Software Technician placed at one end to facilitate smooth operation of 
+the scoring system. 
+ 
+ 
+3.3 There must be no advertisement hoardings, walls, pillars etc. within one metre of the safety area's 
+outer perimeter.  
+ 
+3.4 Coaches will be seated outside the safety area, on their respective sides of the Tatami towards the 
+official table. In cases where the configuration of Tatami makes it impractical to place the Coaches 
+facing the official table, they may instead be placed on each side of the official table. 
+In Para Karate competitions, Coaches and personal assistants  will be seated outside the safety 
+area on their respective sides. Where medal bouts or competitions take place on an elevated 
+platform, personal assistants remain at ground level, outside the platform but behind or beside their 
+Athlete; in such cases, the Coach’s chair next to the platform remains empty during the Athlete’s 
+performance. 
+ 
+ 
+  
+
+Rules Version 2026.0  - 9 - ARTICLE 4: OFFICIAL ATTIRE 
+ 
+4.1  Judges  
+ 
+4.1.1 The official uniform will be as follows: 
+a) A single-breasted navy-blue blazer (colour code 19-4023 TPX) 
+b) Plain light-grey trousers without turn-ups (colour code 18-0201 TPX) 
+c) A white shirt with short sleeves 
+d) Plain dark blue or black socks and black slip-on shoes for use on the match area 
+e) An official tie, worn without a tie pin 
+f) A black whistle with a discreet white cord for the whistle  
+ 
+4.1.2 The following additions to attire are allowed: 
+a) A plain wedding band 
+b) Voluntary religious headwear approved by the WKF 
+c) A hairclip and discreet earrings 
+d) Hair must be worn off the shoulders, and make-up must be discreet 
+e) Heels of more than 4 cm may not be worn with the uniform. 
+ 
+It is strictly forbidden for judges to use phones, wear smart-watches or make use of private 
+electronic devices within the confines of the field of play. Sunglasses are not allowed.  
+ 
+4.1.3 Judges must wear the official uniform at all tournaments, briefings, and courses. 
+4.1.4 For multisport events where a cross-sport uniform is provided for Judges at the cost of the LOC 
+(local Organising Committee) with the feel & look of the specific event. The official uniform for 
+Judges might be substituted by that common uniform, provided that it is requested in writing to 
+the WKF by the event organiser and formally approved by the WKF. 
+4.1.5 If the Chief Referee agrees, officials may be allowed to remove their blazers. 
+4.1.6 The Referee Commission or Chief Referee may refuse the participation of any official who does 
+not comply with this regulation. 
+ 
+4.2 Athletes 
+ 
+4.2.1 Athletes must wear a white, WKF approved Karategi without stripes, piping, or personal embroidery 
+other than specifically allowed by the WKF EC and specified in the bulletin for the competition.  
+a) For all official WKF events (World Championships) in which Para Karate events are held, the 
+Karategi must have embroidered brands on the shoulders in red or blue, respectively, according 
+to the draw.  
+Exceptions include the incumbent Senior World Para Karate Champion, who should wear a gold 
+shoulder embroidery in the current Senior World Championships.  
+This applies to all individual Athletes. There is no WKF requirement for the Athletes from the 
+same National Federation to wear the same brand of Karategi. 
+b) Only the original manufacturer’s labels can be displayed on the Karategi. 
+Rules Version 2026.0  - 10 -  
+ 
+a) The national emblem or flag of the country will be worn on the left breast of the jacket and 
+may not exceed an overall size of 12cm by 8cm. 
+b) In addition, identification issued by the Organising Committee will be worn on the back.  The 
+back number is mandatory for all official WKF events.  
+c) Athletes must wear a WKF Approved red belt (AKA) or blue belt (AO) as allocated by the 
+draw, without any personal embroideries or advertising or markings (BRAND LOGO) other 
+than the customary label from the manufacturer. Belts of grade cannot be worn during the 
+bout/performance. 
+d) The red and blue belts must be around five centimetres wide and of a length sufficient to 
+allow fifteen centimetres free on each side of the knot but not longer than three-quarters 
+thigh length. 
+e) The jacket, when tightened around the waist with the belt, must be of a minimum length that 
+covers the hips, but must not be more than three-quarters thigh length. 
+f) Female Athletes can wear a plain white T-shirt beneath the Karate jacket. 
+g) Jackets without ties cannot be used. The jacket ties holding the jacket in place must be tied 
+at the beginning of the performance. 
+h) The maximum length of the jacket sleeves must be no longer than the bend of the wrist and 
+no shorter than halfway down the forearm. 
+i) Jacket sleeves may not be rolled up. 
+j) The trousers must be long enough to cover at least two thirds of the shin and must not reach 
+below the anklebone. Trouser legs may not be rolled up. 
+
+Rules Version 2026.0  - 11 - k) The Karategi must not be altered or manipulated to change its shape. 
+In Para Karate, reasonable adaptations of the Karategi that are necessary due to the 
+Athlete’s Eligible Impairment (for example, adjustments related to amputation of a limb  or 
+non-standard body size/proportions ) are permitted, provided that they do not give an 
+unfair advantage, do not compromise safety, and are consistent with the Athlete’s 
+classification and/or medical documentation or specifically approved by the WKF Para 
+Karate Commission / WKF EC 
+ 
+4.2.2  The WKF Executive Committee may authorise the display of special labels or trademarks 
+(BRAND LOGOS) of approved sponsors. 
+ 
+4.2.3 Athletes may, according to their own individual choice, use religious headwear approved by the 
+WKF: A black plain fabric head scarf covering the hair, but not the neck or throat area. 
+ 
+4.2.4 Glasses are generally not permitted. However, with the exception of visually impaired Athletes, 
+prescription sport-glasses  or soft contact lenses  may be worn at the Athlete’s own risk. 
+ 
+In Para Karate, visual aids that are medically required for Sport Classes K21 and K22 may 
+be used , provided they are consistent with the Athlete’s classification and medical 
+documentation and approved by the WKF Para Karate Classification panel. 
+ 
+Athletes in Sport Class K10 (Visual Impairment)  must remove all glasses when the blindfold 
+is worn during kata performance. 
+ 
+4.2.5 Athletes must keep their hair clean and cut to a length that does not obstruct the performance. 
+Hachimaki (headband) will not be allowed.  
+ 
+4.2.6 Hair slides are prohibited, as are metal hairgrips. Ribbons, beads and other decorations are 
+prohibited. One or two discreet rubber bands on a single ponytail is permitted.  
+
+Rules Version 2026.0  - 12 -  
+4.2.7 The wearing of any unauthorised apparel, clothing or equipment is forbidden. 
+In Para Karate, assistive devices and supports that are listed in the Athlete’s classification 
+and/or medical documentation and approved according to WKF regulations are not 
+considered unauthorised equipment; however, their use must be confirmed by the Referee 
+and approved by the Tournament Doctor and the Classifier. 
+ 
+4.2.8 In the case of Continental Federations, they will limit themselves to providers and brands 
+already approved for WKF. The National Federation must also accept all WKF approved 
+equipment for all local, regional or national competitions.  
+ 
+4.2.9 Athletes that appear at the competition area with unauthorized equipment or irregular Karategi 
+will be given two minutes to correct the attire, and the Coach based on the report from the Chief 
+Referee may have their coaching license suspended for a period of up to 6 months starting the 
+date after the applicable tournament unless the equipment and attire has been checked 
+beforehand by a WKF Controller.  
+ 
+4.3 Athletes’ Equipment  
+The International Paralympic Committee (IPC) policies and International Standards on sports 
+equipment, as set out in the IPC Handbook, apply to all IPC-recognised events and provide the 
+general principles for safety, fairness, and non-discrimination.  
+WKF Para Karate equipment rules are established in a manner consistent with  these principles. 
+Approved equipment should offer similar conditions between Athletes in the same Sport Class (as 
+well as provide safety, where applicable), to allow a fair comparison between the Athletes and their 
+actual physical–technical abilities. 
+ 
+4.4 Accessory equipment – general principles 
+4.4.3 The accepted accessory equipment for Para Karate Kata competition includes, where 
+appropriate to the Sport Class:  
+ blindfolds (Sport Class K10),  
+ sports glasses (Sport Classes K21, K22 and K30), and  
+ leg straps for wheelchair Athletes (Sport Class K30).  
+4.4.4 Equipment such as canes, crutches, walkers and other similar devices used for physical support 
+are not permitted during kata performance , as they would alter the nature and presentation of 
+the Kata. 
+4.4.5 Prostheses (except for eyes), canes, crutches, and other equipment used for physical support 
+are not allowed in Competition and Classification.  
+4.4.6 For Classification purposes , the Classification Panel may request that Athletes be observed 
+with or without  their usual mobility aids or prostheses, in order to appropriately determine sport 
+class and sport class status in accordance with the IPC Classification Code and the WKF Para 
+Karate Classification Rules.  
+4.4.7 All equipment and accessory devices used by Athletes must be presented at equipment control 
+and, where relevant, to the Classification Panel and Tournament Doctor. They may prohibit or 
+require modification of any item that compromises safety, fairness, or the integrity of the sport.  
+ 
+4.5 Blindfolds (Sport Class K10) 
+ 
+4.5.3 Athletes of the Visually Impaired Sport Class (K10) are required to wear blindfolds that fully 
+block vision and are suitable for blind sports. These may include IBSA-approved blackout 
+glasses that meet WKF safety and performance requirements.  
+Rules Version 2026.0  - 13 - 4.5.4 Blindfolds should be of a dark and discreet colour (e.g., grey, blue, black) and should not have 
+any logos or markings of sponsors.  
+4.5.5 Blindfolds must remain firmly placed on the Athlete’s face and head by means of an adjustable 
+elastic or strap that must not become loose or undone during the performance of the Kata.  
+4.5.6 All blindfolds must be presented at equipment control and are subject to approval by the Para 
+Karate Commission and/or Classification Panel during the Classification Session prior to 
+competition.  
+ 
+4.6 Wheelchairs (Sport Class K30) 
+ 
+4.6.3 Use of a Wheelchair 
+4.6.4 Wheelchairs used in competition must be the same type and configuration as those used during 
+the Classification Session.  Changes must be approved by the Classification Panel prior to the 
+start of competition.  
+4.6.4.1 If an undeclared change of wheelchair or configuration is identified that may affect sport class 
+allocation or the Athlete’s activity limitation profile, the Athlete may be subject to Classification 
+review and/or sport class status review. Intentional non-disclosure or misrepresentation may 
+lead to disqualification and disciplinary consequences in line with the IPC Classification Code 
+and WKF disciplinary procedures.  
+ 
+4.6.5 Straps (Sport Class K30) 
+4.6.6 Straps used during competition must be the same type and configuration as those used in the 
+Classification Session. Changes must be approved by the Classification Panel prior to the start 
+of competition.  
+4.6.6.1 If an undeclared change of strap configuration is identified that may affect the Athlete’s 
+functional profile in competition, the Athlete may be subject to Classification review. Intentional 
+non-disclosure or misrepresentation may result in disqualification and disciplinary action.  
+4.6.6.2 Leg straps to fix the legs of wheelchair Athletes (K30) are allowed. They must:  
+ be of white colour, 
+ be without logos, and 
+ be made from material that is not elastic or otherwise stretchable. 
+4.6.6.3 A maximum of three (3) straps may be used; these must be placed between the ankles and the 
+hip. Fixation of the upper body is not allowed. 
+ 
+ 
+4.6.7 Types of Wheelchairs 
+ 
+4.6.7.1 All types of manual wheelchairs which allow the athletic and undisturbed presentation of a Kata, 
+and which comply with the technical specifications below, are allowed.  
+4.6.7.2 The following are not permitted  for competition:  
+a) Walkers.  
+b) Wheelchairs with electric drive support (e.g. electric motors integrated into wheel 
+hubs). 
+c) Electric wheelchairs. 
+ 
+4.6.7.3 Wheelchair Features 
+ 
+a) The underside of the footrests must be designed to prevent damage to the tatami.  
+b) One or two anti-tip castor(s) attached to the back of the wheelchair for safety purposes is 
+permitted. They  
+Rules Version 2026.0  - 14 - c) can be attached to either the frame or the rear axle and located at the rear of the wheelchair; 
+castors that frequently or even continuously come into contact with the floor can be added to 
+the wheelchair. The width between castors must be limited to the distance between the inside 
+of the two big wheels. When the Athlete is sitting in the wheelchair in a forward driving position, 
+the maximum permissible distance between the bottom of the anti-tip castor(s) and the tatami 
+is 2 cm. The anti-tip castor(s) must not protrude beyond the vertical plane that touches the 
+rearmost points of the driving wheels. This alignment should be judged with the wheelchair in its 
+forward driving position.  
+d) Large rear wheels may have a maximum camber of 18 degrees.  
+e) The large wheels may be of any colour, as long as they do not stain or damage the tatami. Tyres 
+or castors that mark the tatami are not permitted.  
+f) The maximum height from the floor to the top of the cushion, when a cushion is used, or to the 
+top of the seat platform (when a cushion is not used) must not exceed 65 cm.  
+g) There must be one hand rim on each wheel.  
+h) No steering devices or gears are allowed on the wheelchair.  
+ 
+4.6.8 Advertising on Wheels  
+ 
+4.6.8.1 Multiple sponsor logos and advertising may be placed on the main wheels. The logo may take up 
+to the size of the circle formed by the spokes. Both wheels may be used, provided that all 
+advertising complies with WKF and IPC advertising and branding regulations. 
+ 
+ 
+ 
+ 
+ 
+
+Rules Version 2026.0  - 15 - 4.6.9 Prohibited Advertising and Messages  
+ 
+4.6.9.1 Any identification, logo, or item that promotes or advertises political or religious views, or that 
+provides illegal or false impressions of the sport, is prohibited. 
+4.6.9.2 Content that disparages the identity or reputation of the competition, the WKF, any Local 
+Organising Commission, Major Games Organising Committee (such as the International 
+Olympic Committee or the International Paralympic Committee), National Federation or 
+competitor is strictly forbidden. 
+4.6.9.3 Advertising of products which harm the integrity of the sport or its Athletes (e.g. tobacco or 
+alcohol) or that violate the WADA Anti-Doping Code or local laws is also prohibited. 
+ 
+4.6.10 WKF Discretion  
+ 
+4.6.10.1 WKF will have the general discretion to object to any form of advertising which hurts the 
+integrity of the sport and its Athletes or lends a negative image to the competition. All such cases 
+will be forwarded to the Disciplinary and Legal Commission. 
+ 
+4.6.11 Prohibited Logo Placement on Wheelchairs  
+Placement of sponsor logos or advertisements is prohibited in the following places of the 
+wheelchair: 
+a) the backrest,  
+b) the side guards or armrests,  
+c) the footplate,  
+d) the castors,  
+e) the frame. 
+ 
+4.7 Service Animals  
+ 
+4.7.3 Service animals are animals trained to aid people with disabilities and to perform specific 
+functions, such as guide dogs for people with visual impairment or dogs trained to detect 
+seizures or hypoglycaemia. 
+4.7.4 Medical service animals are allowed to accompany Athletes within the competition venue, 
+subject to local laws and venue regulations. Only animals trained and certified to detect life-
+threatening conditions will be allowed at the external perimeter of the Competition Area, where 
+they must remain without causing interference. Service animals may not enter the Competition 
+Area. 
+4.7.5 Therapy animals, emotional-support animals, or pets that are not medical service animals are 
+not permitted in the Competition Area or its perimeter. 
+ 
+4.8 Coaches and personal assistants 
+ 
+4.8.1 Each Athlete may be accompanied at the competition by a Coach, and, where required due to 
+the Athlete’s impairment, by one Personal Assistant  in addition to the Coach. Both the Coach 
+and the Personal Assistant must wear the official tracksuit of their National Federation and 
+display their official accreditation at all times during the tournament, except for medal bouts of 
+official WKF events, where: 
+ male Coaches and Personal Assistants are required to wear a dark suit, shirt and tie, and 
+ female Coaches and Personal Assistants may choose to wear a dress, pantsuit or a 
+combination of jacket and skirt in dark colours. 
+ Shoes must be closed; sandals or other open-toe shoes are not permitted. 
+ 
+Rules Version 2026.0  - 16 - 4.8.2 The following additions to attire are allowed:  
+a) A plain wedding band.  
+b) Voluntary religious headwear approved by the WKF. 
+ 
+4.8.3 The Chief Referee may allow Coaches and Personal Assistants to use the Federation’s official 
+team T-shirt or a plain coloured T-shirt without writing or logos instead of the tracksuit jacket. 
+ 
+4.8.4 The Coach is responsible for sporting, tactical and technical support. The Personal Assistant  
+is responsible only for support related to the Athlete’s daily needs, safety and communication 
+(for example, guiding to and from the competition area, wheelchair handling, assistance with 
+clothing), and must not provide technical coaching during the performance. 
+ 
+4.8.5 In any unforeseen incident, such as additional Classification testing, Doping Control, fire or other 
+need for emergency evacuation, the National Coaches are directly responsible for the safe 
+removal of their Athletes. Coaches and Personal Assistants must ensure that the Athlete is 
+appropriately accompanied throughout the competition and that any medication which may be 
+required is accessible. 
+ 
+4.8.6  Where bouts or competitions take place on a platform, the Athlete may be guided to and from 
+the platform by the Coach or Personal Assistant if necessary, in accordance with the access 
+restrictions to the Competition Area defined in these Rules and the event bulletin. 
+ 
+  
+Rules Version 2026.0  - 17 - ARTICLE 5: ORGANISATION OF KATA COMPETITION 
+ 
+5.1 General 
+ 
+5.1.1 Kata is not a dance or theatrical performance. It must adhere to the traditional values and 
+principles. It must be realistic in fighting terms and display concentration, power, and potential 
+impact in its techniques. It must demonstrate strength, power, and speed, as well as grace, 
+rhythm, and balance. 
+ 
+5.1.2 Athletes must at all times follow the instructions given by the Chief Judge. 
+ 
+5.2 Competition format  
+ 
+5.2.1 Groups of 8 Athlete Elimination System is used for Para Karate competition. 
+ 
+5.2.2 The Individual Kata competition consists of individual performance in separate male and female 
+divisions. 
+ 
+5.3 Seeding and order of performance. 
+ 
+5.3.1 For World Individual Championships – Phase 2, and Continental Championships, the four top 
+ranked Athletes in the WKF World Ranking present as per the day before the competition are 
+seeded. 
+ 
+5.4 Reporting of kata to be performed 
+ 
+5.4.1 It is the sole responsibility of the Coach, or in the absence of a Coach, or the Competitor to 
+ensure that the Kata as notified to the Runner is appropriate for that particular round.  
+ 
+5.4.2 Should there be any discrepancy between the number and the name of the kata registered for 
+performance, the number, as per the official WKF Kata list, will prevail. 
+ 
+5.5 Failure to appear on time  
+ 
+5.5.1 Individual Athletes that do not present themselves when called, or decide not to continue, will 
+be disqualified (KIKEN) from that category. Disqualification by KIKEN means that the Athletes 
+are disqualified from that category. 
+ 
+5.6 Groups with 8 Athletes Elimination System   
+ 
+5.6.1 The number of Athletes will determine the number of groups to facilitate the elimination rounds. 
+The following table summarises the number of pools and groups according to the number of 
+Athletes: 
+ 
+Number of Athletes Number of 
+groups Number of Kata 
+performed to win Athletes in the second round  
+2 1 1 Zero (No second round)  
+3  1 2 Medal Bout (only for gold)  
+4 2 2 Medal Bout (only for gold)  
+5 to 10 2 2 Medal Bout  
+Rules Version 2026.0  - 18 - 11 to 24 2 3 8 Athletes 
+25 to 48 4 4 16 Athletes 
+49 to 96 8 4 32 Athletes 
+ 
+5.6.2 Groups of eight (with the exceptions explained for less than 11 or more than 96) and for each 
+round reduce the number of Athletes per group to 4 passing on to the next round – until only two 
+groups of Athletes remains, whereupon the Athletes with the highest score in each of the two 
+respective groups are pitted against each other competing for 1st place (the loser taking 2nd 
+place) and the Athletes having the second highest score in each of the two groups are pitted 
+against the third highest score in the other group to compete for the two 3rd places (bronze 
+finals).  
+ 
+5.6.3 In the event that there are 2 Athletes a single kata is performed to determine 1st and 2nd place.  
+ 
+5.6.4 With 3 athletes one group is formed for the first round and the first two athletes meet to compete 
+for 1st and 2nd place and the 3rd athlete is automatically placed 3rd. 
+ 
+5.6.5 With 4 athletes two groups of two are formed for the first round and the two winners meet to 
+compete for 1st while the two losers are placed 3rd.  
+ 
+5.6.6 With 5-10 athletes two groups and the three highest scoring of each group go on to medal 
+matches. The group will then follow the normal procedure that the highest scoring Competitor 
+for each group will compete for 1st and 2nd place - and number 2 will meet number 3 from the 
+other group and vice versa – unless there is only 5 Athletes total – in which case the number 2 
+competitor in the larger group will win his/her 3rd place on bye (walk-over).  
+ 
+5.6.7 If the number of athletes is 11-24, two groups are formed. After the first Kata the 4 top athletes 
+form two groups of four after which the second Kata will determine the ranking for the 6 athletes 
+(3 from each group) that will proceed to compete in the third round for the medals in the normal 
+manner. 
+ 
+5.6.8 If the number of athletes is 25-48, four groups are formed. After the first Kata the top 4 athletes 
+from each group will pass to the second round. In the second round, 16 Athletes are divided in 2 
+groups in 2 Tatami (8 Athletes for each group) and the second Kata will be performed. After the 
+second round the 4 best athletes for each group (eight in total) will pass to the third round. In the 
+third round, these 8 Athletes are divided into 2 groups (4 contestants for each group) and 
+perform the third Kata. After the third round the 3 best athletes of each group will pass to the 
+medal bouts, performing the fourth Kata.  
+  
+Rules Version 2026.0  - 19 -  
+5.6.9 The following table illustrates the competition format:  
+5.6.10  
+ 
+ 
+5.6.11 The Medal performances: The winners of the two pools compete for gold and silver. Number 2 in one of 
+the last two groups pool will then meet number 3 in the other of the last two groups for to compete for the 
+two bronze medals. 
+ 
+5.6.12 The losers of the bronze finals will place 5th.  
+ 
+ 
+5.7 Kata competition for those under 16 years of age 
+ 
+There are no specific deviations from the standard rules, but a limitation to the Kata list to less 
+advanced Kata may be used. 
+ 
+5.8 Coaching 
+ 
+5.8.1 In World Championships, Kata coaches need to be part of a National Federation delegation and 
+have the required Coach certification level, when acting during the bout of an Athlete. 
+  
+
+Rules Version 2026.0  - 20 -  
+ARTICLE 6: THE JUDGING PANEL 
+ 
+6.1 For all official WKF competitions, the panel of seven Judges for each round of competition will be 
+designated by random selection, deploying a computer program.  
+ 
+6.2 For each mat, one Judge is designated as the Tatami Manager and will assume the lead in 
+conducting any required communication with the Software technician and handle any 
+unanticipated issue among the Judges. 
+ 
+6.3 Judges-deployment and panel allocation for the eliminatory rounds: The RC Secretary will 
+facilitate to the Software technician handling the electronic drawing system a list containing the 
+Judges available per Tatami. This list is done by the RC Secretary once the Athletes draw is 
+finished and at the end of the Referees’ briefing. This list must only contain Judges present at the 
+briefing and must comply with the above-mentioned criteria. Then for the Judges’ draw the 
+Software Technician will enter the list in the system and seven Judges out of each Tatami 
+deployment will be randomly selected as judging panel.  
+ 
+6.4 For medal bouts the Tatami Managers will provide the RC Chairman and the RC Secretary with 
+a list containing available officials from their own Tatami after the last performance of the 
+eliminatory round is finished. Once the list is approved by the RC Chairman, it will be given to the 
+Software Technician for entry into the system. The system will then randomly allocate the 
+Judging panel, which will only contain the seven Judges. 
+ 
+6.5 As found expedient, the Announcer and the Software Technician operating the electronic judging 
+system may be the same person. 
+ 
+6.6 Furthermore, the organisers have to provide Runners for each competition area familiar with the 
+WKF Kata list to collect and record the chosen Kata of the Athletes before each round and bring 
+the listing to the Software technician. The Tatami Manager is responsible for overseeing the 
+operation of the Runner(s).  
+ 
+6.7 The Judges of a Kata bout must not have the nationality or be from the same National Federation 
+of either of the participants or have any other conflict of interest. It remains the duty of any official 
+to self-report on any possible conflict of interest before the bout or match starts. 
+ 
+6.8 If manual judging by paper scorecards is employed, five Judges will be used: four placed at each 
+corner of the Tatami and one functioning as Head Judge centered at the side closest to the 
+official table.    
+ 
+  
+Rules Version 2026.0  - 21 - ARTICLE 7: EVALUATION  
+ 
+7.1 Official Kata list 
+ 
+7.1.1 Only Kata from the WKF official Kata list may be performed. The official kata list is found in 
+APPENDIX 1.  
+ 
+7.1.2 Names of some Kata are duplicated due to the variations customary in spelling in Romanisation. 
+In several instances, a Kata may be known under a different name from style (Ryu-ha) to style, 
+and in exceptional instances, an identical name may in fact be a different Kata from style to style.  
+ 
+7.2 Number of Kata required 
+ 
+7.2.1 A visually (K10) or physically (K30) impaired Athlete must perform a different kata, for each 
+round unless the Kata is performed as a tiebreaker.  
+ 
+7.2.2 Athletes from the Intellectually Impaired category (Sport Classes K21 and K22) may perform the 
+same Kata in each round; thus, repetition of the Kata is allowed.  
+ 
+ 
+7.3 Assessment 
+7.3.1 The performance is evaluated from the bow starting the Kata until the bow ending the Kata.  
+ 
+7.3.2 Slight variation as taught by the Athlete’s style (Ryu-Ha) of Karate will be permitted. 
+ 
+7.3.3 Deviations may be acceptable due to the type of impairment. 
+ 
+7.3.4 Alterations may serve as alternatives for non-executable techniques (for example, hand 
+techniques or raising the wheelchair, instead of kicks, for Wheelchair Athletes, Hikite to the 
+wheelchair wheel instead of to the hip, etc.). Turns may be used instead of jumps for Athletes of 
+all Classes. 
+ 
+7.3.5 Kata must have recognisable content and characteristics of the original kata. 
+ 
+  
+7.4 Point system 
+ 
+7.4.1 Performances are given a score using a scale from 5.0 to 10.0 in increments of 0.1 - where 5.0 
+represents the lowest score possible for a Kata that is accepted as performed - and 10.0 
+represents a perfect performance. A disqualification is indicated by a 0.0 score.  
+ 
+7.4.2 The Compensation Score (Extra Points) issued by the Classification Panel will then be added to 
+the Judges’ Score, to adjust for how the Athlete’s Impairment affects Kata performance (as 
+described in the WKF Para Karate Classification Rules).  
+ 
+7.4.3 The system will eliminate the highest and lowest scores:  
+ 
+JUDGE 
+1 JUDGE 
+2 JUDGE 
+3 JUDGE 
+4 JUDGE 
+5 JUDGE 
+6 JUDGE 
+7 EXTRA 
+SCORE TOTAL 
+7.6 7.6 8.2 7.7 7.5 7.8 8.1 1.2 40.0 
+Rules Version 2026.0  - 22 -  
+ 
+7.5 Score levels 
+ 
+For the purpose of uniform application of the scale used in scoring the following guideline applies: 
+ 10  Perfect   
+ 9 - 9.9 Excellent  
+ 8 - 8.9 Very good  
+ 7 - 7.9 Good   
+ 6 - 6.9 Acceptable 
+ 5 - 5.9 Insufficient 
+ 0  Disqualified 
+ 
+7.6 Criteria for evaluation 
+ 
+Judges apply the standard WKF Kata criteria listed in the left column, interpreted in light of the sport-
+class–specific guidance on the right. 
+ 
+Kata Performance Technical performance specification according to 
+the sport class  
+ 
+1. Stances 
+ 
+2. Techniques 
+ 
+3. Transitional movements  
+ 
+4. Timing and synchronisation 
+ 
+ 
+5. Correct breathing 
+ 
+6. Focus (KIME) 
+ 
+ 
+7. Conformance:  Consistency in the 
+performance of the KIHON 
+ 
+8. Strength 
+ 
+ 
+9. Speed 
+ 
+10. Balance 
+ K10 – Visually Impaired Athletes  
+ Recognisable embusen and orientation 
+(start/finish area, main directions). 
+ Stable stances, posture and balance without 
+visual reference. 
+ Precise, coordinated techniques in correct 
+directions with clear endpoints. 
+ 
+K21–K22 – Intellectually Impaired Athletes 
+ Complete kata with simple, consistent rhythm 
+and limited unnecessary pauses. 
+ Fluid transitions between techniques and 
+stances. 
+ Clear basic techniques with arms, legs and 
+body moving in coordination. 
+ 
+K30 – Physically Impaired Athletes (Wheelchair 
+users) 
+ Controlled, purposeful wheelchair movement 
+following the general kata line. 
+ Controlled posture and trunk alignment within 
+the Athlete’s functional abilities, with clear 
+upper-body techniques and kime. 
+ Coordination between wheelchair motion and 
+technique execution (e.g. stopping/turning in 
+time with techniques). 
+ 
+ 
+7.7 Resolving ties   
+ 
+Ties are resolved by the following steps to determine the winner:  
+ 
+Rules Version 2026.0  - 23 - 1. The one having the highest score when including also the lowest score obtained in the 
+performance between the two Athletes (Results given by 6 of the 7 Judges). 
+2. The one having the highest score including both the lowest and highest score obtained in the 
+performance between the two Athletes (Results given by all 7 Judges). 
+3. Highest World Ranking at the date of the competition. 
+4. Repeat Kata performance. 
+ 
+ 
+7.8 Fouls 
+ 
+The following fouls, if apparent, must be considered by the Judges.  
+They shall be evaluated in relation to the Athlete’s Sport Class and functional abilities . Minor 
+deviations that are clearly a direct consequence of the eligible impairment and consistent with the Sport 
+Class should not be over-penalised. 
+1. Announcing the kata at the wrong time , e.g. announcing the kata before, instead of after, the 
+bow. 
+2. Minor loss of balance or posture with quick recovery , relative to the Athlete’s usual functional 
+capacity. 
+3. Incorrect or incomplete execution of a movement , such as failure to fully execute a block or 
+punching clearly off target. 
+4. Asynchronous movements , such as delivering a technique clearly before or after completion 
+of the body transition. 
+5. Use of audible cues  from any other person (including the Coach) to guide tempo or sequence, 
+where the Athlete is otherwise able to continue independently. 
+6. Theatrical behaviours  such as deliberate stamping of the feet, slapping the chest, arms, or 
+Karategi, or inappropriate, exaggerated exhalation. These must be considered very serious fouls, 
+on the same level as one would penalise a temporary loss of balance. 
+7. Incorrect Kiai . Kiai must be short, concentrated, and simultaneous with the technique. 
+8. Belt coming loose  to the extent that it is clearly coming off the hips during the performance. 
+9. Other equipment (e.g. leg straps, sports glasses) moving out of place  during the performance 
+without immediate correction, provided safety is not compromised. 
+10. Unjustified time-wasting , including prolonged marching, excessive bowing, or prolonged 
+pause before starting the performance. Reasonable additional time for orientation, wheelchair 
+positioning, or communication related to the impairment should not be penalised. 
+11. A distinct pause or stop in the performance  from which the Athlete subsequently resumes 
+and completes the kata. 
+12. Any minor loss of balance, or loss of seated balance in K30, other than a fall , where the 
+Athlete is able to safely continue and complete the kata. 
+ 
+7.9 Disqualification 
+ 
+A Competitor may be disqualified for any of the following reasons: 
+1. Not announcing the kata, announcing the wrong kata, or performing a kata other than the 
+one pre-announced  to the official table. 
+2. Failing to bow  at the beginning and/or completion of the kata performance. 
+3. Not starting the kata facing the Judges.  
+4. Total loss of balance or fall that prevents the Athlete from safely continuing or completing 
+the performance , including in K30 an uncontrolled loss of seated balance that makes 
+continuation unsafe. 
+5. Omitting or adding movements , or otherwise substantially changing the performance from its 
+original form. 
+Rules Version 2026.0  - 24 - 6. Belt falling off completely  during the performance. 
+7. For K10 (Visually Impaired Athletes): blindfolds moving out of the correct position so that they 
+partially or fully uncover one or both eyes during the performance. 
+8. Failure to follow the instructions of the Chief Judge or other misconduct (SHIKKAKU).  
+9. For K30 (wheelchair kata): using lower limb function in a way that is clearly incompatible 
+with the Athlete’s allocated Sport Class , such as standing up or weight-bearing on the legs 
+during the performance, or using the non-affected leg during the wheelchair kata performance, 
+as confirmed by the Chief Judge and, where necessary, the Classification Panel. 
+10. Coach instructions or deliberate external guidance during the kata performance , such as 
+spoken directions or visible signals after the start of the performance, beyond what is permitted 
+for Athlete safety and basic orientation, or continuing after a warning. 
+11. Use in competition of equipment or configuration that differs significantly from that 
+presented and approved at Classification and/or equipment control , and that provides an 
+unfair advantage or changes the Athlete’s functional profile, as confirmed by the Technical 
+Delegate and/or Classification Panel. 
+12. Intentional misrepresentation of impairment or non-cooperation with Classification , as 
+determined under the WKF Para Karate Classification Rules and the IPC Classification Code. 
+Such cases may lead to SHIKKAKU and additional disciplinary and classification sanctions. 
+ 
+In Para Karate, potential reasons for disqualification must be treated with particular care, as certain 
+eligible impairments or underlying health conditions may influence movement patterns or behaviour 
+during performance. The Chief Judge must call Shugo before any decision of disqualification is 
+taken, in order to allow consultation among the Judges and, where appropriate, with a representative of 
+the Para Karate Commission or the Classification Panel. Following this consultation, the situation may 
+be confirmed as grounds for disqualification, treated as a foul, or left without consequence, according 
+to the principles of fair and safe competition. 
+ 
+7.10 Excessive celebration and political or religious demonstrations 
+ 
+Athletes are expected to respect the ceremony of salutations before and after the performance.  Any 
+excessive celebration, such as falling on one’s knees etc., or political or religious expressions, during or 
+immediately after the performance is, prohibited and will be subject to a fine equal to the amount 
+determined by the EC for the protest fee. The Tatami Manager or Chief Referee will notify the official 
+table. 
+ 
+ 
+7.11 Manual Judging by use of paper scorecards 
+ 
+7.11.1 Manual judging by use of manual scorecards may be used for competitions where electronic 
+scoring equipment is not available or where a technical malfunction makes it impossible to use 
+the electronic system.  
+7.11.2 After the Competitor has completed the kata performance, the Head Judge will blow the whistle, 
+and all five Judges (including the Head Judge) will simultaneously display their paper scorecards 
+to indicate the score awarded. The Judges will hold the scorecards visible to the official table 
+until the Head Judge blows the whistle a second time, signalling that the scorecards are to be 
+taken down.  
+7.11.3 The scores will then be registered manually in accordance with the applicable scoring procedure 
+(including elimination of highest and lowest scores, where relevant). The Officials at the scoring 
+table will add any applicable Compensation Score (Extra Points) for the Sport Class  and 
+calculate the final score , which will then be announced in the usual manner.  
+ 
+Rules Version 2026.0  - 25 - ARTICLE 8: OPERATION OF MATCHES 
+ 
+8.1 General operation 
+ 
+8.1.1 Para Karate kata events are conducted according to the WKF competition format (elimination 
+groups and medal bouts), with the adaptations described in these Rules.  
+ 
+8.2 Registration of kata 
+ 
+8.2.1 Before each round, the Athlete or Coach must submit the chosen kata to the assigned Runner, 
+who will relay the information to the Software Technician of the electronic judging system or to 
+the designated scoring Officials in case of manual judging.  
+8.2.2 It is the sole responsibility of the Coach, or in the absence of a Coach, the Athlete, to ensure that 
+the kata notified to the Runner is appropriate and permitted for that particular round.  
+8.2.3 Should there be any discrepancy between the number and the name of the kata registered for 
+performance, the number, as per the official WKF Kata list, will prevail.  
+ 
+8.3 Non-appearance and withdrawal 
+ 
+8.3.1 Individual Athletes who do not present themselves when called, or who decide not to continue, 
+will be disqualified (KIKEN) from that category. Disqualification by KIKEN means that the Athlete 
+is withdrawn from that category only.  
+ 
+8.4 Access to the competition area and starting procedure 
+ 
+8.4.1 The Athlete may be guided to the competition area boundary by one Accompanying Person  
+(Coach or Personal Assistant). The Athlete will then move to the starting position independently, 
+within the perimeter of the Competition Area. The Accompanying Person is not allowed to enter 
+the Competition Area.  
+8.4.2 When the Athlete is called (i.e. as soon as the Athlete’s name appears on the screen or is 
+announced), the Athlete must promptly proceed to the starting point for the kata, facing the 
+Judges, without unnecessary or prolonged marching.  
+8.4.3 The starting point for the performance is anywhere within the perimeter of the competition area, 
+unless otherwise specified in the event bulletin.  
+8.4.4 After taking the starting position and bowing, the Athlete must clearly – if possible given the 
+nature of the impairment  – announce the name of the kata that is to be performed and then 
+start the performance without further delay.  
+ 
+8.5 Elimination performances (group rounds) 
+ 
+8.5.1 At the start of each round, the Athletes of the group line up at the match area perimeter facing 
+the Judges. A “round” is understood as one performance of all Athletes in a group.  
+8.5.2 Following the bows – initially “SHOMEN NI REI” and subsequently “OTAGAI NI REI” – the 
+Athletes step back out of the match area and wait to be called in the order established by the 
+draw. 
+8.5.3 When called, each Athlete steps up to the starting point for the kata, facing the Judges, performs 
+the bow, announces the kata, and begins the performance.  
+8.5.4 At the end of the performance, which is defined as the final bow in the kata, the Athlete must 
+remain on the tatami in the designated position and wait for the announcement of the evaluation. 
+After the score has been announced, the Athlete bows and leaves the tatami.  
+Rules Version 2026.0  - 26 - 8.5.5 At the end of each group, all Athletes in that group line up again at the match area perimeter. The 
+announcer (speaker) then announces the Athletes who advance to the next round, and the 
+names of the top Athletes are shown on the monitor. The Athletes bow and leave the 
+competition area.  
+ 
+8.6 Medal bouts 
+ 
+8.6.1 The medal bout begins with the Athletes entering the competition area and bowing to the Judges 
+(“SHOMEN NI REI”), then bowing to each other (“OTAGAI NI REI”). The Athlete with the red belt 
+(AKA) performs the kata first, followed by the Athlete with the blue belt (AO) upon completion of 
+AKA’s kata.  
+8.6.2 While the opponent is performing, the Athlete not performing stands at the designated position 
+near the perimeter of the competition area and refrains from moving or talking so as not to 
+disturb the other Athlete’s performance.  
+8.6.3 At the end of the performance, which is defined as the final bow in the kata, the Athlete returns 
+to the designated position at the end of the competition area and waits for the announcement of 
+the result.  
+8.6.4 When an Athlete has completed the kata, the Judges (including the Chief Judge) give their score 
+by electronic device, or – where applicable – by manual judging procedures described in Article 
+5.12. 
+8.6.5 Once the announcement of the winner is given, the Athletes, upon the signal “OTAGAI NI REI,” 
+bow to each other, and upon “SHOMEN NI REI,” bow to the Judges and leave the tatami.  
+  
+Rules Version 2026.0  - 27 - ARTICLE 9: OFFICIAL PROTEST 
+ 
+9.1  General provisions 
+ 
+9.1.1 No one may protest about a Judgement to the members of the Refereeing Panel. 
+ 
+9.1.2 If a Refereeing procedure appears to contravene the rules, the Athlete’s Coach or their official 
+representative are the only ones allowed to make a protest.  
+ 
+9.1.3 The protest will take the form of a written report submitted immediately after the bout in which 
+the protest was generated. The sole exception is when the protest concerns an administrative 
+malfunction.  
+ 
+9.1.4 Any protest concerning application of the rules must not necessarily impede the progression of 
+the competition and the intent to protest should be announced by the Coach or NF 
+representative immediately after the end of the bout. 
+ 
+9.1.5 The Coach / NF representative will request the official protest form [APPENDIX 3] from the 
+Tatami Manager and will be expected to have it completed, signed, and delivered to the Tatami 
+Manager with the corresponding fee within 5 minutes after announcing the intent to protest.  
+ 
+9.1.6 Failure of a Coach / NF representative to deliver a protest in a timely manner can lead to its 
+rejection if such delay, in the opinion of the Appeals Jury, is without reasonable justification and 
+impedes the progression of the competition.  
+ 
+9.1.7 The Tatami Manager will immediately add the names of the officials and hand the completed 
+protest form to a representative of the Appeals Jury. The Appeals Jury will, without delay, review 
+the circumstances leading to the protested decision. Having considered all the facts available, 
+they will produce a report and shall be empowered to take such action as may be called for. The 
+protest will be reviewed by the Appeals Jury, and as part of this review, the Jury will study the 
+evidence available in support of the protest.  
+ 
+9.1.8 The protest may also be directly decided and announced to the Appeals Jury by the RC Chairman 
+or the Chief Referee of the event, in which case no payment of a protest fee will be applicable. 
+ 
+9.1.9 In case of an administrative malfunction during a bout in progress, the Coach can notify the 
+Tatami Manager directly. In turn, the Tatami Manager will notify the Chief Judge. 
+ 
+9.1.10 The protest must give the name and country of the Athletes, the Judges officiating, and the 
+precise details of what is being protested. No general claims about overall standards will be 
+accepted as a legitimate protest. The burden of proving the validity of the protest lies with the 
+complainant. The protest must be submitted to a representative of the Appeals Jury by the 
+Tatami Manager. In due course the Jury will review the circumstances leading to the protested 
+decision. 
+ 
+9.1.11 The protester must deposit a Protest Fee as agreed by the WKF EC, and this, together with the 
+protest must be lodged with the Tatami Manager who will turn it over to a representative of the 
+Appeals Jury. 
+ 
+9.1.12 Any protest should be announced by the Coach or NF representative immediately after the end 
+of the bout. 
+Rules Version 2026.0  - 28 -  
+9.1.13 The decision of the Appeals Jury is final and may only be overruled by a decision of the Executive 
+Committee upon request of the WKF President.  
+ 
+9.1.14 The Appeals Jury may not impose sanctions or penalties. Their function is to pass judgment on 
+the merit of the protest to start required actions from the RC and OC to take remedial action to 
+rectify any Refereeing procedure found to contravene the rules. 
+ 
+9.1.15 If the protest involves Athletes in an ongoing category, then the next round that could involve the 
+athlete must be postponed until the appeal is decided. 
+ 
+9.2 Composition of the Appeals Jury 
+ 
+9.2.1 The Appeals Jury is comprised of three Senior Referee representatives appointed by the Referee 
+Commission (RC) or the Chief Referee. No two members may be appointed from the same 
+National Federation. They will be numbered from 1 to 3. 
+ 
+9.2.2 The RC will also appoint three additional members with designated numbering from 4 to 6 that 
+automatically will replace any of the originally appointed Appeals Jury members in a conflict-of-
+interest situation. I.e., where the jury member is of the same nationality or have a family 
+relationship by blood or as an In-Law with any of the parties involved in the protested incident, 
+including all members of the Refereeing panel involved in the protested incident. 
+ 
+9.3 Appeals Evaluation Process 
+ 
+9.3.1 It is the responsibility of the Tatami Manager receiving the protest to gather the Appeals Jury and 
+deposit the protest sum with WKF for any declined protest. 
+9.3.2 The Appeals Jury will immediately make such inquiries and investigations, as they consider 
+necessary to validate the merit of the protest.  
+ 
+9.3.3 Each of the three members is obliged to give their verdict as to the validity of the protest. 
+Abstentions are not acceptable. 
+ 
+9.4 Declined and accepted protests 
+ 
+9.4.1 If a protest is found invalid, the Appeals Jury will appoint one of its members to verbally notify 
+the protester that the protest has been declined, mark the original document with the word 
+“DECLINED”, have it signed by each of the members of the Appeals Jury, and inform the 
+protester of the decision.   
+ 
+9.4.2 If the protest is accepted, the Appeals Jury will appoint one of its members who will verbally 
+notify the protester that the protest has been accepted, mark the original document with the 
+word “ACCEPTED”, and have it signed by each of the members of the Appeals Jury, before 
+depositing the protest with the Chief Referee, and returning the protest fee to the protester. 
+ 
+9.4.3 After a protest is accepted, the appeals Jury will liaise with the Organising Commission (OC) and 
+Chief Referee to take such measures as can be practically carried out to remedy the situation 
+including the possibilities of: 
+- Reversing previous judgments that contravene the rules 
+- Voiding results of the affected rounds from the point before the incident 
+- Redoing such bouts that have been affected by the incident 
+Rules Version 2026.0  - 29 - - Issuing a recommendation to the RC for any involved Judges evaluated for sanction. 
+ 
+9.4.4 The responsibility rests with the Appeals Jury to exercise restraint and sound judgment in taking 
+actions that will disturb the program of the event in any significant manner. Reversing the results 
+is a last option to secure a fair outcome. 
+ 
+9.5 Incident Report 
+ 
+9.5.1 After handling the incident in the above prescribed manner, the Appeals Jury will meet again and 
+elaborate a simple protest incident report, describing their findings and state their reason(s) for 
+accepting or rejecting the protest.  
+ 
+9.5.2 The report should be signed by all three members of the Appeals Jury and submitted to the Chief 
+Referee and the Organising Commission.  
+ 
+  
+Rules Version 2026.0  - 30 - ARTICLE 10: ADAPTATION OF THESE RULES TO EVENTS OUTSIDE THE WKF OFFICIAL 
+EVENT PROGRAMME 
+ 
+10.1 National Federations may modify these rules for the purpose of national competitions or other 
+competitions not on the official WKF programme, as long as these adaptations do not provide an 
+advantage or disadvantage for particular styles of karate.  
+ 
+10.2 National Federations are encouraged to consult their national sports authorities for guidance on 
+national law and/or guidelines for competitive sports for athletes under 16 years of age. 
+ 
+10.3 Any deviation from the Competition Rules applied to a competition must be announced in the 
+official bulletin or invitation to the event.   
+ 
+  
+Rules Version 2026.0  - 31 -  
+ARTICLE 11: ISSUES NOT SPECIFICALLY COVERED BY THE RULES 
+ 
+From time to time, situations may occur where the rules fall short of giving specific instructions to resolve 
+an issue. In such instances, the Chief Referee for the competition has the authority to resolve the issue 
+by applying analogous resolutions to similar cases found in the rules or their best judgment. Before 
+making a decision, the Chief Referee may consult the assigned WKF Representative for the tournament 
+or escalate the issue to the Sports Commissioner for consultation before taking a decision. 
+ 
+  
+Rules Version 2026.0  - 32 - APPENDIX 1:  OFFICIAL KATA LIST  
+ 
+ 
+ 
+ 
+In reporting the kata to be performed use the designated number. Should there be inconsistency 
+between the number and the name of the kata, the number will be considered the reported kata to be 
+performed.   
+
+Rules Version 2026.0  - 33 - APPENDIX 2: KATA COMPETITION CATEGORIES 
+ 
+BLIND/VISUALLY IMPAIRED FEMALE K10 (16+ years) 
+BLIND/VISUALLY IMPAIRED MALE K10  (16+ years) 
+INTELLECTUALLY IMPAIRED FEMALE K21 (16+ years) 
+INTELLECTUALLY IMPAIRED FEMALE K22 (16+ years) 
+INTELLECTUALLY IMPAIRED MALE K21  (16+ years) 
+INTELLECTUALLY IMPAIRED MALE K22  (16+ years) 
+WHEELCHAIR USER FEMALE K30  (16+ years) 
+WHEELCHAIR USER MALE K30   (16+ years)   
+Rules Version 2026.0  - 34 - APPENDIX 3:  KATA PROTEST FORM  
+WKF OFFICIAL PROTEST FORM   
+ 
+KATA 
+The protest must be prepaid. 
+ 
+DATE COMPETITION  PLACE 
+ 
+…….. / …….. / ……..   
+ 
+            NAME OF THE ATHLETE                       COUNTRY  
+ 
+  
+ 
+PROTEST DESCRIPTION  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+NAME 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Valid as receipt by the WKF  
+SIGNATURE  
+ 
+ 
+FOR OFFICIAL USE ONLY  
+TATAMI N° TM Manager:  
+PANEL Judge 1 Judge 2 Judge 3 Judge 4 Judge 5 Judge 6 Judge 7 
+NAME        
+COUNTRY        
+ 
+
