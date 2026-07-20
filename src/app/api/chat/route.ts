@@ -72,42 +72,35 @@ function getPdfContext(message: string): string {
   return '';
 }
 
-function writeViolationLog(msg: string) {
-  const line = `${new Date().toISOString()} - PELANGGARAN: ${msg}`;
-  console.warn(line); // Penting untuk melihat log di dashboard Vercel
-  
-  try {
-    const logPath = path.join(process.cwd(), 'admin_hukuman.log');
-    
-    // Rotasi: max 100 baris
-    if (fs.existsSync(logPath)) {
-      const existing = fs.readFileSync(logPath, 'utf8').split('\n').filter(Boolean);
-      if (existing.length >= 100) existing.splice(0, existing.length - 99);
-      fs.writeFileSync(logPath, [...existing, line].join('\n') + '\n');
-    } else {
-      fs.writeFileSync(logPath, line + '\n');
-    }
-  } catch { /* ignore: di Vercel filesystem biasanya read-only */ }
+function containsBadWord(text: string): boolean {
+  const badWords = ['tolol', 'bego', 'anjing', 'babi', 'goblok', 'bangsat', 'kontol', 'memek', 'ngentot', 'perek', 'pelacur'];
+  const lower = text.toLowerCase();
+  return badWords.some(bw => lower.includes(bw));
 }
 
-const BADWORDS = ["anjing","babi","bangsat","kontol","memek","jembut","ngentot","goblok","tolol","bajingan","keparat"];
-
-function containsBadWord(text: string): boolean {
-  const lower = text.toLowerCase();
-  return BADWORDS.some(w => lower.includes(w));
+function writeViolationLog(logMsg: string) {
+  try {
+    const logPath = path.join(process.cwd(), 'violation_logs.txt');
+    const timestamp = new Date().toISOString();
+    fs.appendFileSync(logPath, `[${timestamp}] ${logMsg}\n`);
+  } catch (err) {
+    console.error('Gagal menulis log:', err);
+  }
 }
 
 export async function POST(req: Request) {
   try {
-    const body = await req.json();
-    const { message, history, userName, userBelt } = body;
+    const { message, history, userName, userBelt } = await req.json();
 
-    // Perlindungan spoofing
-    if (typeof message === 'string' && message.toUpperCase().startsWith('SISTEM:')) {
+    if (typeof message !== 'string' || message.trim() === '') {
+      return Response.json({ error: 'invalid', reply: 'Pesan tidak valid atau kosong.' }, { status: 400 });
+    }
+
+    if (message.includes('<script>') || message.includes('SELECT * FROM')) {
+      writeViolationLog(`Injeksi dari "${userName}": "${message}"`);
       return Response.json({ error: 'spoof', reply: '⚠️ Percobaan injeksi sistem terdeteksi dan ditolak.' }, { status: 400 });
     }
 
-    // Filter kata kasar
     if (typeof message === 'string' && containsBadWord(message)) {
       writeViolationLog(`Kata kasar dari "${userName}": "${message}"`);
       return Response.json({ error: 'profane', reply: '🥋 Chukoku! Wasit memberi peringatan karena Anda menggunakan kata tidak pantas. Ulangi lagi dan sesi Anda akan berakhir!' }, { status: 400 });
