@@ -21,10 +21,14 @@ function getPdfContext(message: string): string {
   const isPara = msg.includes('para') || msg.includes('kursi roda') || msg.includes('wheelchair');
   const isProtest = msg.includes('protes') || msg.includes('video') || msg.includes('vr');
   
-  // Daftar file yang wajib dimuat sebagai dasar (hanya rule umum & wasit agar konteks tidak hilang)
   const filesToLoad = new Set<string>();
-  filesToLoad.add('WKF_Referee_Rules_2025.pdf.txt');
-  filesToLoad.add('WKF_GENERAL_REGULATIONS_vf.pdf.txt');
+  
+  // Deteksi jika user menanyakan syarat wasit atau regulasi umum
+  const isGeneral = msg.includes('umum') || msg.includes('regulasi') || msg.includes('general') || msg.includes('wasit') || msg.includes('referee') || msg.includes('syarat') || msg.includes('lisensi') || msg.includes('coach');
+  if (isGeneral) {
+    filesToLoad.add('WKF_Referee_Rules_2025.pdf.txt');
+    filesToLoad.add('WKF_GENERAL_REGULATIONS_vf.pdf.txt');
+  }
 
   // Muat file spesifik jika terdeteksi
   if (isKata) filesToLoad.add('WKF Kata Competition Rules 2026 MASTER COPY_V2.pdf.txt');
@@ -32,8 +36,8 @@ function getPdfContext(message: string): string {
   if (isPara) filesToLoad.add('WKF 2026 Para Karate Competition Rules MASTER COPY_V2.pdf.txt');
   if (isProtest) filesToLoad.add('Guidelines for Handling an official protest at WKF Events_180326.pdf.txt');
 
-  // Jika tidak ada topik yang terdeteksi, jadikan Kumite sebagai default karena paling sering ditanya
-  if (!isKata && !isKumite && !isPara && !isProtest) {
+  // Jika tidak ada topik yang terdeteksi sama sekali, jadikan Kumite sebagai default
+  if (!isKata && !isKumite && !isPara && !isProtest && !isGeneral) {
     filesToLoad.add('WKF 2026 Kumite Competition Rules MASTER COPY_V11.pdf.txt');
   }
 
@@ -130,7 +134,7 @@ ${getPdfContext(message)}`;
     // Bangun riwayat percakapan dalam format OpenAI-compatible (Groq memakai format ini)
     const messages: Groq.Chat.ChatCompletionMessageParam[] = [
       { role: 'system', content: systemPrompt },
-      ...(history || []).map((h: { role: string; text: string }) => ({
+      ...(history || []).slice(-6).map((h: { role: string; text: string }) => ({
         role: (h.role === 'user' ? 'user' : 'assistant') as 'user' | 'assistant',
         content: h.text,
       })),
