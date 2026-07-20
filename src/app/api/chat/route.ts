@@ -47,7 +47,11 @@ function getPdfContext(message: string): string {
       for (const file of files) {
         if (filesToLoad.has(file)) {
           if (!fileCache[file]) {
-             fileCache[file] = fs.readFileSync(path.join(refDir, file), 'utf8');
+             let rawText = fs.readFileSync(path.join(refDir, file), 'utf8');
+             // Minify teks untuk hemat token: hilangkan spasi/enter ganda dan titik-titik daftar isi
+             rawText = rawText.replace(/\.{3,}/g, '.');
+             rawText = rawText.replace(/\s+/g, ' ');
+             fileCache[file] = rawText.trim();
           }
           result += fileCache[file] + '\n';
         }
