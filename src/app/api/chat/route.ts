@@ -4,8 +4,8 @@ import path from 'path';
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY || '' });
 
-// Model Groq yang dipakai — Llama 3.3 70B: sangat capable, gratis, konteks besar
-const GROQ_MODEL = 'llama-3.3-70b-versatile';
+// Model Groq yang dipakai — Llama 3.1 8B: lebih ringan, limit lebih besar, anti error 429
+const GROQ_MODEL = 'llama-3.1-8b-instant';
 
 // Simple memory cache untuk file yang sudah pernah dibaca agar tidak terus membaca dari disk
 const fileCache: Record<string, string> = {};
