@@ -1,14 +1,18 @@
-import Groq from 'groq-sdk';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 import fs from 'fs';
 import path from 'path';
 
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY || '' });
-const GROQ_MODEL = 'llama-3.1-8b-instant';
+// Use the standard environment variable that Next.js and the Gemini SDK expect
+const apiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY || process.env.GEMINI_API_KEY || '';
+const genAI = new GoogleGenerativeAI(apiKey);
+
+// Using the recommended fast model for chat interactions
+const GEMINI_MODEL = 'gemini-3.5-flash';
 
 function getPdfContext(message: string): string {
-  // PANGKAS TOTAL: Sistem pembacaan PDF dinonaktifkan sementara karena 
-  // limit token harian/menitan Groq versi gratis sangat kecil. 
-  // AI sekarang hanya akan mengandalkan kepintaran dasarnya sendiri tentang Karate.
+  // Sistem pembacaan PDF dinonaktifkan sementara.
+  // Untuk mengaktifkannya kembali dengan Gemini (yang memiliki token lebih besar),
+  // Anda bisa mengimplementasikan semantic search / vector DB di sini.
   return '';
 }
 
@@ -67,25 +71,32 @@ ONBOARDING:
 3. Jika keduanya sudah diketahui → baru mulai diskusi materi.
 4. Sesuaikan kedalaman penjelasan dengan tingkat sabuk (sabuk putih = dasar, sabuk hitam = teknis mendalam).
 
-ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF.`;
+ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF.
 
-    const messages: Groq.Chat.ChatCompletionMessageParam[] = [
-      { role: 'system', content: systemPrompt },
-      ...(history || []).slice(-6).map((h: { role: string; text: string }) => ({
-        role: (h.role === 'user' ? 'user' : 'assistant') as 'user' | 'assistant',
-        content: h.text,
-      })),
-      { role: 'user', content: message },
-    ];
+Perhatian: Saat ini Anda tidak terhubung dengan dokumen referensi WKF 2026. Oleh karena itu, jika Anda ditanya mengenai detail spesifik pasal atau aturan kompetisi, JANGAN MENGARANG (HALU). Katakan dengan sopan bahwa sistem memori dokumen Anda sedang dibatasi sehingga Anda belum bisa memberikan jawaban spesifik WKF 2026.`;
 
-    const response = await groq.chat.completions.create({
-      model: GROQ_MODEL,
-      messages,
-      temperature: 0.2,
-      max_tokens: 2048,
+    const model = genAI.getGenerativeModel({
+      model: GEMINI_MODEL,
+      systemInstruction: systemPrompt,
     });
 
-    const reply = response.choices[0]?.message?.content ?? '(Tidak ada respons dari AI)';
+    // Convert history to Gemini format
+    const geminiHistory = (history || []).map((h: { role: string; text: string }) => ({
+      role: h.role === 'user' ? 'user' : 'model',
+      parts: [{ text: h.text }],
+    }));
+
+    const chatSession = model.startChat({
+      history: geminiHistory,
+      generationConfig: {
+        temperature: 0.2,
+        maxOutputTokens: 2048,
+      },
+    });
+
+    const result = await chatSession.sendMessage(message);
+    const reply = result.response.text();
+
     return Response.json({ reply });
 
   } catch (err: any) {
