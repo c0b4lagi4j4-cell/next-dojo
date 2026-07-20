@@ -3,72 +3,12 @@ import fs from 'fs';
 import path from 'path';
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY || '' });
-
-// Model Groq yang dipakai — Llama 3.1 8B: lebih ringan, limit lebih besar, anti error 429
 const GROQ_MODEL = 'llama-3.1-8b-instant';
 
-// Simple memory cache untuk file yang sudah pernah dibaca agar tidak terus membaca dari disk
-const fileCache: Record<string, string> = {};
-
 function getPdfContext(message: string): string {
-  let result = '';
-  const refDir = path.join(process.cwd(), 'referensi');
-  const msg = message.toLowerCase();
-  
-  // Heuristik Deteksi Topik
-  const isKata = msg.includes('kata') || msg.includes('bunkai') || msg.includes('enpi') || msg.includes('unsu');
-  const isKumite = msg.includes('kumite') || msg.includes('yuko') || msg.includes('waza') || msg.includes('ippon') || msg.includes('senshu') || msg.includes('chui') || msg.includes('hansoku');
-  const isPara = msg.includes('para') || msg.includes('kursi roda') || msg.includes('wheelchair');
-  const isProtest = msg.includes('protes') || msg.includes('video') || msg.includes('vr');
-  
-  const filesToLoad = new Set<string>();
-  
-  // Deteksi jika user menanyakan syarat wasit atau regulasi umum
-  const isGeneral = msg.includes('umum') || msg.includes('regulasi') || msg.includes('general') || msg.includes('wasit') || msg.includes('referee') || msg.includes('syarat') || msg.includes('lisensi') || msg.includes('coach');
-  if (isGeneral) {
-    filesToLoad.add('WKF_Referee_Rules_2025.pdf.txt');
-    filesToLoad.add('WKF_GENERAL_REGULATIONS_vf.pdf.txt');
-  }
-
-  // Muat file spesifik jika terdeteksi
-  if (isKata) filesToLoad.add('WKF Kata Competition Rules 2026 MASTER COPY_V2.pdf.txt');
-  if (isKumite) filesToLoad.add('WKF 2026 Kumite Competition Rules MASTER COPY_V11.pdf.txt');
-  if (isPara) filesToLoad.add('WKF 2026 Para Karate Competition Rules MASTER COPY_V2.pdf.txt');
-  if (isProtest) filesToLoad.add('Guidelines for Handling an official protest at WKF Events_180326.pdf.txt');
-
-  // Jika tidak ada topik yang terdeteksi sama sekali, jadikan Kumite sebagai default
-  if (!isKata && !isKumite && !isPara && !isProtest && !isGeneral) {
-    filesToLoad.add('WKF 2026 Kumite Competition Rules MASTER COPY_V11.pdf.txt');
-  }
-
-  try {
-    if (fs.existsSync(refDir)) {
-      const files = fs.readdirSync(refDir);
-      for (const file of files) {
-        if (filesToLoad.has(file)) {
-          if (!fileCache[file]) {
-             let rawText = fs.readFileSync(path.join(refDir, file), 'utf8');
-             // Minify teks untuk hemat token: hilangkan spasi/enter ganda dan titik-titik daftar isi
-             rawText = rawText.replace(/\.{3,}/g, '.');
-             rawText = rawText.replace(/\s+/g, ' ');
-             // PANGKAS EKSTREM: Batasi maksimal 15.000 karakter (~3.500 token) per file
-             // Limit Groq API pada akun Anda ternyata hanya 6.000 TPM (Token Per Menit)
-             rawText = rawText.substring(0, 15000);
-             fileCache[file] = rawText.trim();
-          }
-          result += fileCache[file] + '\n';
-        }
-      }
-    }
-  } catch { /* ignore */ }
-
-  if (result.trim()) {
-    return `\n\nBERIKUT ADALAH DOKUMEN REFERENSI MUTLAK (BUKU PERATURAN WKF 2026):\n` +
-      `==========================================================\n${result}\n` +
-      `==========================================================\n` +
-      `ATURAN MUTLAK: Jika jawaban dari pertanyaan pengguna TIDAK TERDAPAT secara eksplisit di dalam dokumen Referensi di atas, ` +
-      `Anda WAJIB menjawab: 'Maaf, saya tidak menemukan informasi tersebut di buku peraturan WKF 2026'. JANGAN MENEBAK.`;
-  }
+  // PANGKAS TOTAL: Sistem pembacaan PDF dinonaktifkan sementara karena 
+  // limit token harian/menitan Groq versi gratis sangat kecil. 
+  // AI sekarang hanya akan mengandalkan kepintaran dasarnya sendiri tentang Karate.
   return '';
 }
 
@@ -113,7 +53,7 @@ export async function POST(req: Request) {
 
     const systemPrompt = `Informasi Waktu Saat Ini: ${waktu}.
 
-Anda adalah KARATE AI ASSISTANT, asisten virtual khusus peraturan Karate WKF 2026 yang membantu Karateka, Wasit, dan Juri.
+Anda adalah KARATE AI ASSISTANT, asisten virtual khusus peraturan Karate WKF yang membantu Karateka, Wasit, dan Juri.
 Sapa selalu dengan "OSH!!" di pesan pertama, diikuti ucapan sesuai waktu (Pagi/Siang/Sore/Malam).
 Bicara seperti manusia yang hangat, bukan seperti robot. Sisipkan nama pengguna di setiap jawaban.
 
@@ -126,12 +66,9 @@ ONBOARDING:
 2. Jika nama sudah diketahui tapi sabuk belum → tanya tingkat sabuk/pengalaman.
 3. Jika keduanya sudah diketahui → baru mulai diskusi materi.
 4. Sesuaikan kedalaman penjelasan dengan tingkat sabuk (sabuk putih = dasar, sabuk hitam = teknis mendalam).
-5. Kutipan peraturan WKF → wajib dalam format blockquote markdown (diawali '>').
 
-ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF 2026.
-${getPdfContext(message)}`;
+ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF.`;
 
-    // Bangun riwayat percakapan dalam format OpenAI-compatible (Groq memakai format ini)
     const messages: Groq.Chat.ChatCompletionMessageParam[] = [
       { role: 'system', content: systemPrompt },
       ...(history || []).slice(-6).map((h: { role: string; text: string }) => ({
@@ -155,9 +92,6 @@ ${getPdfContext(message)}`;
     const msg = String(err?.message || err);
     if (msg.includes('429') || msg.includes('quota') || msg.includes('rate_limit') || msg.includes('Rate limit')) {
       return Response.json({ error: '429' }, { status: 429 });
-    }
-    if (msg.includes('503')) {
-      return Response.json({ error: '503' }, { status: 503 });
     }
     console.error('[API Error]', err);
     return Response.json({ error: 'unknown', details: msg }, { status: 500 });
