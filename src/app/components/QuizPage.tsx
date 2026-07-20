@@ -10,9 +10,11 @@ interface QuizQuestion {
   question: string;
   answer: 'Benar' | 'Salah';
   explanation: string;
+  source?: string;
+  ref?: string;
 }
 
-type Phase = 'loading' | 'quiz' | 'result';
+type Phase = 'select_category' | 'loading' | 'quiz' | 'result';
 
 export default function QuizPage({
   profile,
@@ -21,7 +23,8 @@ export default function QuizPage({
   profile: UserProfile;
   onBack: () => void;
 }) {
-  const [phase, setPhase] = useState<Phase>('loading');
+  const [phase, setPhase] = useState<Phase>('select_category');
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<(string | null)[]>([]);
@@ -43,7 +46,8 @@ export default function QuizPage({
     }, 1000);
   }, []);
 
-  const loadQuiz = useCallback(async () => {
+  const loadQuiz = useCallback(async (cat?: string) => {
+    const targetCat = typeof cat === 'string' ? cat : selectedCategory;
     if (cooldown > 0) return;
     setPhase('loading');
     setError('');
@@ -53,7 +57,7 @@ export default function QuizPage({
       const res = await fetch('/api/quiz', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ belt: profile.belt }),
+        body: JSON.stringify({ belt: profile.belt, category: targetCat }),
       });
       const data = await res.json();
       
@@ -73,9 +77,7 @@ export default function QuizPage({
         setError(e.message || 'Terjadi kesalahan saat memuat soal quiz.');
       }
     }
-  }, [profile.belt, cooldown, startCooldown]);
-
-  useEffect(() => { loadQuiz(); }, [loadQuiz]);
+  }, [profile.belt, cooldown, startCooldown, selectedCategory]);
 
   const handleAnswer = (choice: string) => {
     const newAnswers = [...answers];
@@ -198,9 +200,11 @@ export default function QuizPage({
         .question-num { font-size:clamp(10px,2.5vw,11.5px);color:#7ab3ef;font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px; }
         .question-text { font-size:clamp(14px,3.5vw,15.5px);line-height:1.55;color:#e8edf2;font-weight:500; }
         .options-grid { display:flex;flex-direction:column;gap:10px;margin-top:14px; }
-        .option-btn { display:flex;align-items:center;justify-content:center;padding:clamp(13px,4vw,16px);background:#1e2d3d;border:2px solid #243447;border-radius:12px;cursor:pointer;text-align:center;transition:all .15s;color:#d4dde8;font-size:clamp(14px,4vw,16px);font-weight:700;letter-spacing:1px;width:100%; }
-        .option-btn.btn-benar:hover:not(:disabled) { border-color:#4caf50;background:rgba(76,175,80,.1); }
-        .option-btn.btn-salah:hover:not(:disabled) { border-color:#ef5350;background:rgba(239,83,80,.1); }
+        .option-btn { display:flex;align-items:center;justify-content:center;padding:clamp(13px,4vw,16px);background:#1e2d3d;border:2px solid #243447;border-radius:12px;cursor:pointer;text-align:center;transition:all .2s;color:#d4dde8;font-size:clamp(14px,4vw,16px);font-weight:700;letter-spacing:1px;width:100%;outline:none;-webkit-appearance:none;appearance:none; }
+        .option-btn:focus { outline:none; }
+        .option-btn:focus-visible { outline:none; }
+        button.option-btn.btn-benar:not(:disabled):hover { border-color:#4caf50 !important;background:rgba(76,175,80,.15) !important;color:#81c784 !important; }
+        button.option-btn.btn-salah:not(:disabled):hover { border-color:#ef5350 !important;background:rgba(239,83,80,.15) !important;color:#ef9a9a !important; }
         .option-btn.selected-correct { border-color:#4caf50;background:rgba(76,175,80,.12);color:#81c784; }
         .option-btn.selected-wrong { border-color:#ef5350;background:rgba(239,83,80,.12);color:#ef9a9a; }
         .option-btn:disabled { cursor:not-allowed;opacity:.7; }
@@ -235,6 +239,10 @@ export default function QuizPage({
         .modal-btn:disabled { opacity:.5;cursor:not-allowed; }
         .icon-btn { padding:7px;border-radius:50%;border:none;background:transparent;color:#7c8b97;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s,color .15s; }
         .icon-btn:hover { background:rgba(255,255,255,.08);color:#fff; }
+        
+        /* Back Button */
+        .back-btn { display:flex;align-items:center;gap:6px;padding:6px 12px;background:rgba(239,83,80,0.15);border:1px solid rgba(239,83,80,0.3);color:#ef9a9a;border-radius:20px;font-size:clamp(11px,3vw,13px);font-weight:600;cursor:pointer;transition:all .2s; }
+        .back-btn:hover { background:rgba(239,83,80,0.25);color:#fff;border-color:#ef5350; }
         .toast { position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#1e2d3d;border:1px solid #2b3e50;color:#fff;padding:10px 18px;border-radius:20px;font-size:clamp(12px,3vw,13.5px);z-index:200;max-width:calc(100vw - 32px);text-align:center; }
         @media (max-width:360px) {
           .quiz-body { padding:10px 10px; }
@@ -250,12 +258,50 @@ export default function QuizPage({
           {phase === 'quiz' && (
             <span style={{ fontSize: 13, color: '#7ab3ef' }}>{current + 1} / {questions.length}</span>
           )}
-          <button className="icon-btn" onClick={onBack} title="Kembali ke Chat">
-            <XCircle size={20} />
+          <button className="back-btn" onClick={onBack}>
+            <XCircle size={16} /> Tutup
           </button>
         </div>
 
         <div className="quiz-body">
+          {/* Select Category */}
+          {phase === 'select_category' && (
+            <div style={{ textAlign: 'center', padding: '20px 10px' }}>
+              <div style={{ fontSize: 40, marginBottom: 12 }}>📋</div>
+              <h3 style={{ marginBottom: 24, fontSize: 'clamp(16px, 4.5vw, 20px)' }}>Pilih Topik Ujian</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 12, maxWidth: 320, margin: '0 auto' }}>
+                <button 
+                  className="option-btn" 
+                  onClick={() => { setSelectedCategory('kumite'); loadQuiz('kumite'); }}
+                  style={{ background: 'linear-gradient(135deg, #1e2d3d, #243447)' }}
+                >
+                  🔴 Kumite Quiz
+                </button>
+                <button 
+                  className="option-btn" 
+                  onClick={() => { setSelectedCategory('kata'); loadQuiz('kata'); }}
+                  style={{ background: 'linear-gradient(135deg, #1e2d3d, #243447)' }}
+                >
+                  🔵 Kata Quiz
+                </button>
+                <button 
+                  className="option-btn" 
+                  onClick={() => { setSelectedCategory('coach'); loadQuiz('coach'); }}
+                  style={{ background: 'linear-gradient(135deg, #1e2d3d, #243447)' }}
+                >
+                  👔 Coach Quiz
+                </button>
+                <button 
+                  className="option-btn" 
+                  onClick={() => { setSelectedCategory('all'); loadQuiz('all'); }}
+                  style={{ background: 'linear-gradient(135deg, #2979ff, #7c4dff)', borderColor: 'transparent' }}
+                >
+                  🎲 Campuran (Random)
+                </button>
+              </div>
+            </div>
+          )}
+
           {/* Loading */}
           {phase === 'loading' && !error && (
             <div className="loading-box">
@@ -271,7 +317,7 @@ export default function QuizPage({
               
               <button 
                 className="result-btn retry" 
-                onClick={loadQuiz} 
+                onClick={() => loadQuiz()} 
                 disabled={cooldown > 0}
                 style={{ margin: '0 auto', display: 'inline-flex', opacity: cooldown > 0 ? 0.6 : 1, cursor: cooldown > 0 ? 'not-allowed' : 'pointer' }}
               >
@@ -329,7 +375,7 @@ export default function QuizPage({
                 <div className="result-actions">
                   <button className="result-btn pdf" onClick={savePDF}><Download size={14} /> Simpan PDF</button>
                   <button className="result-btn email" onClick={() => setShowEmailModal(true)}><Mail size={14} /> Kirim Email</button>
-                  <button className="result-btn retry" onClick={loadQuiz}><RefreshCcw size={14} /> Quiz Baru</button>
+                  <button className="result-btn retry" onClick={() => setPhase('select_category')}><RefreshCcw size={14} /> Quiz Baru</button>
                 </div>
               </div>
 
@@ -346,6 +392,11 @@ export default function QuizPage({
                       </span>
                     </div>
                     <div className="result-explain">💡 {q.explanation}</div>
+                    {q.source && (
+                      <div style={{ fontSize: 'clamp(10px,2.5vw,11px)', color: '#4a6478', marginTop: 5, fontStyle: 'italic' }}>
+                        📄 {q.source} — {q.ref}
+                      </div>
+                    )}
                   </div>
                 );
               })}

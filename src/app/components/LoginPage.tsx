@@ -8,14 +8,15 @@ interface UserProfile {
 }
 
 const BELT_OPTIONS = [
-  'Sabuk Putih (Kyu 10-9)',
-  'Sabuk Kuning (Kyu 8-7)',
-  'Sabuk Hijau (Kyu 6-5)',
-  'Sabuk Biru (Kyu 4-3)',
-  'Sabuk Merah (Kyu 2-1)',
+  'Sabuk Putih (Kyu 10)',
+  'Sabuk Kuning (Kyu 9-8)',
+  'Sabuk Hijau (Kyu 7-6)',
+  'Sabuk Biru (Kyu 5-4)',
+  'Sabuk Coklat (Kyu 3-1)',
   'Sabuk Hitam Dan 1',
   'Sabuk Hitam Dan 2',
   'Sabuk Hitam Dan 3+',
+  'Wasit / Juri Perguruan',
   'Wasit / Juri Nasional',
   'Wasit / Juri Internasional',
   'Pelatih / Instruktur',
@@ -27,10 +28,13 @@ export default function LoginPage({ onLogin }: { onLogin: (p: UserProfile) => vo
   const [club, setClub] = useState('');
   const [error, setError] = useState('');
 
+  const isComplete = name.trim() !== '' && belt !== '' && club.trim() !== '';
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name.trim()) { setError('Nama tidak boleh kosong ya!'); return; }
+    if (!name.trim()) { setError('Nama tidak boleh kosong!'); return; }
     if (!belt) { setError('Pilih tingkatan sabuk dulu!'); return; }
+    if (!club.trim()) { setError('Isi nama Perguruan / Dojo terlebih dahulu!'); return; }
     onLogin({ name: name.trim(), belt, club: club.trim() });
   };
 
@@ -189,8 +193,14 @@ export default function LoginPage({ onLogin }: { onLogin: (p: UserProfile) => vo
           transition: opacity 0.2s, transform 0.15s;
           box-shadow: 0 4px 20px rgba(41, 121, 255, 0.35);
         }
-        .login-btn:hover  { opacity: 0.9; transform: translateY(-1px); }
-        .login-btn:active { transform: scale(0.98); }
+        .login-btn:hover:not(:disabled) { opacity: 0.9; transform: translateY(-1px); }
+        .login-btn:active:not(:disabled) { transform: scale(0.98); }
+        .login-btn:disabled {
+          background: linear-gradient(135deg, #2b3e50, #3d2e5a);
+          opacity: 0.5;
+          cursor: not-allowed;
+          box-shadow: none;
+        }
 
         /* ── Footer ── */
         .login-footer {
@@ -251,20 +261,20 @@ export default function LoginPage({ onLogin }: { onLogin: (p: UserProfile) => vo
             </div>
 
             <div className="form-group">
-              <label className="form-label">Perguruan / Dojo <span style={{ color: '#4a6278', fontWeight: 400 }}>(opsional)</span></label>
+              <label className="form-label">Perguruan / Dojo *</label>
               <input
                 className="form-input"
                 type="text"
-                placeholder="Contoh: INKANAS Jakarta"
+                placeholder="Contoh: Dojo Garuda Jakarta"
                 value={club}
-                onChange={e => setClub(e.target.value)}
+                onChange={e => { setClub(e.target.value); setError(''); }}
               />
             </div>
 
             {error && <div className="form-error">⚠️ {error}</div>}
 
-            <button type="submit" className="login-btn">
-              MASUK KE DOJO →
+            <button type="submit" className="login-btn" disabled={!isComplete}>
+              {isComplete ? 'MASUK KE DOJO →' : 'Lengkapi Data Terlebih Dahulu'}
             </button>
           </form>
 

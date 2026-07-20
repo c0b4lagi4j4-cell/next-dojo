@@ -1,8 +1,11 @@
-import { GoogleGenAI } from '@google/genai';
+import Groq from 'groq-sdk';
 import fs from 'fs';
 import path from 'path';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY || '' });
+
+// Model Groq yang dipakai — Llama 3.3 70B: sangat capable, gratis, konteks besar
+const GROQ_MODEL = 'llama-3.3-70b-versatile';
 
 // Simple memory cache untuk file yang sudah pernah dibaca agar tidak terus membaca dari disk
 const fileCache: Record<string, string> = {};
@@ -73,7 +76,7 @@ function writeViolationLog(msg: string) {
     } else {
       fs.writeFileSync(logPath, line + '\n');
     }
-  } catch { /* ignore: di Vercel filesystem biasanya read-only, jadi catch akan menangkap error ini */ }
+  } catch { /* ignore: di Vercel filesystem biasanya read-only */ }
 }
 
 const BADWORDS = ["anjing","babi","bangsat","kontol","memek","jembut","ngentot","goblok","tolol","bajingan","keparat"];
@@ -124,30 +127,29 @@ ONBOARDING:
 ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF 2026.
 ${getPdfContext(message)}`;
 
-    // Bangun riwayat percakapan
-    const contents = [
+    // Bangun riwayat percakapan dalam format OpenAI-compatible (Groq memakai format ini)
+    const messages: Groq.Chat.ChatCompletionMessageParam[] = [
+      { role: 'system', content: systemPrompt },
       ...(history || []).map((h: { role: string; text: string }) => ({
-        role: h.role === 'user' ? 'user' : 'model',
-        parts: [{ text: h.text }],
+        role: (h.role === 'user' ? 'user' : 'assistant') as 'user' | 'assistant',
+        content: h.text,
       })),
-      { role: 'user', parts: [{ text: message }] },
+      { role: 'user', content: message },
     ];
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.0-flash',
-      contents,
-      config: {
-        systemInstruction: systemPrompt,
-        temperature: 0.2,
-      },
+    const response = await groq.chat.completions.create({
+      model: GROQ_MODEL,
+      messages,
+      temperature: 0.2,
+      max_tokens: 2048,
     });
 
-    const reply = response.text ?? '(Tidak ada respons dari AI)';
+    const reply = response.choices[0]?.message?.content ?? '(Tidak ada respons dari AI)';
     return Response.json({ reply });
 
   } catch (err: any) {
     const msg = String(err?.message || err);
-    if (msg.includes('429') || msg.includes('quota') || msg.includes('RESOURCE_EXHAUSTED')) {
+    if (msg.includes('429') || msg.includes('quota') || msg.includes('rate_limit') || msg.includes('Rate limit')) {
       return Response.json({ error: '429' }, { status: 429 });
     }
     if (msg.includes('503')) {

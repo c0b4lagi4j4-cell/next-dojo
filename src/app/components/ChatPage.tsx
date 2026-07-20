@@ -70,8 +70,8 @@ function EmailModal({ onSend, onCancel, isSending }: {
   return (
     <div className="modal-overlay">
       <div className="modal-box">
-        <h3>📧 Kirim ke Email</h3>
-        <p>Masukkan alamat email tujuan:</p>
+        <h3>📧 Simpan & Kirim ke Email?</h3>
+        <p>Apakah Anda ingin mengirim riwayat ini ke email? Jika ya, masukkan alamat email tujuan:</p>
         <input
           type="email"
           className="modal-input"
@@ -81,7 +81,7 @@ function EmailModal({ onSend, onCancel, isSending }: {
           autoFocus
         />
         <div className="modal-actions">
-          <button className="modal-btn cancel" onClick={onCancel} disabled={isSending}>Batal</button>
+          <button className="modal-btn cancel" onClick={onCancel} disabled={isSending}>Lewati (Tidak Kirim)</button>
           <button className="modal-btn confirm" onClick={() => onSend(email)} disabled={isSending || !email.includes('@')}>
             {isSending ? 'Mengirim...' : 'Kirim'}
           </button>
@@ -469,7 +469,7 @@ export default function ChatPage({
       {/* Modals */}
       {showEndModal && (
         <EndModal
-          onEndOnly={() => { setShowEndModal(false); setEnded(true); }}
+          onEndOnly={() => { setShowEndModal(false); setEnded(true); setShowEmailModal(true); }}
           onGoHome={() => { setShowEndModal(false); onLogout(); }}
           onCancel={() => setShowEndModal(false)}
         />
