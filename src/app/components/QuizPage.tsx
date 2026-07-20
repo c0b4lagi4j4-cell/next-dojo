@@ -203,7 +203,7 @@ export default function QuizPage({
         .option-btn { display:flex;align-items:center;justify-content:center;padding:clamp(13px,4vw,16px);background:#1e2d3d;border:2px solid #243447;border-radius:12px;cursor:pointer;text-align:center;transition:all .2s;color:#d4dde8;font-size:clamp(14px,4vw,16px);font-weight:700;letter-spacing:1px;width:100%;outline:none;-webkit-appearance:none;appearance:none; }
         .option-btn:focus { outline:none; }
         .option-btn:focus-visible { outline:none; }
-        button.option-btn.btn-benar:not(:disabled):hover, button.option-btn.btn-salah:not(:disabled):hover { border-color:#2979ff !important;background:rgba(41,121,255,.15) !important;color:#7ab3ef !important; }
+        .option-btn:not(:disabled):hover { border-color:#2979ff !important;background:rgba(41,121,255,.15) !important;color:#7ab3ef !important; }
         .option-btn.selected-correct { border-color:#4caf50;background:rgba(76,175,80,.12);color:#81c784; }
         .option-btn.selected-wrong { border-color:#ef5350;background:rgba(239,83,80,.12);color:#ef9a9a; }
         .option-btn:disabled { cursor:not-allowed;opacity:.7; }

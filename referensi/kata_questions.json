@@ -1,0 +1,218 @@
+[
+  {
+    "category": "kata",
+    "question": "Semua anggota tim Kata harus memakai merek Karate Gi yang sama.",
+    "answer": "Salah",
+    "explanation": "Anggota tim Kata tidak harus mengenakan merek gi yang sama, tetapi harus mengenakan tanda merek yang sama di bahu (shoulder embroidery).",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Total waktu yang diberikan untuk gabungan demonstrasi Kata dan BUNKAI adalah enam menit.",
+    "answer": "Salah",
+    "explanation": "Total waktu yang diperbolehkan untuk Kata dan Bunkai digabungkan adalah 5 menit, bukan 6 menit.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Dalam kompetisi Kata, sedikit variasi seperti yang diajarkan oleh gaya kontestan (Ryu-ha) diperbolehkan.",
+    "answer": "Benar",
+    "explanation": "Variasi kecil sesuai aliran (Ryu-ha) yang diajarkan kepada peserta diperbolehkan dalam kompetisi Kata.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Jika terdapat perbedaan antara nomor dan nama Kata yang didaftarkan, maka nama yang sesuai dengan daftar resmi Kata WKF yang akan berlaku.",
+    "answer": "Salah",
+    "explanation": "Jika ada ketidaksesuaian antara nomor dan nama Kata yang didaftarkan, NOMOR urut dalam daftar resmi WKF yang berlaku, bukan nama.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Pemberian perintah untuk memulai dan mengakhiri Kata oleh anggota tim tidak dianggap sebagai isyarat eksternal.",
+    "answer": "Salah",
+    "explanation": "Perintah dari anggota tim untuk memulai atau mengakhiri Kata DIANGGAP sebagai isyarat eksternal dan merupakan pelanggaran.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Kata yang dimainkan sebelumnya hanya dapat diulang jika digunakan sebagai pemecah tiebreak.",
+    "answer": "Benar",
+    "explanation": "Kata yang sudah pernah ditampilkan hanya boleh diulang jika digunakan sebagai tiebreaker untuk menentukan pemenang.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Kata yang sama tidak boleh dibawakan dua kali berturut-turut dalam sistem Round-robin.",
+    "answer": "Benar",
+    "explanation": "Dalam sistem round-robin, Kata yang sama tidak boleh ditampilkan dua kali berturut-turut.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Meskipun pita dan hiasan rambut lainnya tidak diperbolehkan dalam kumite, namun diperbolehkan dalam Kata.",
+    "answer": "Salah",
+    "explanation": "Pita dan dekorasi rambut lainnya tidak diperbolehkan baik dalam Kumite maupun Kata.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Atlet Putri wajib mengenakan kaos putih polos di balik jaket Karate.",
+    "answer": "Salah",
+    "explanation": "Atlet wanita BOLEH (bukan WAJIB) mengenakan kaos putih polos di bawah jaket Karate jika mereka mau.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Menyebabkan cedera karena kurangnya teknik yang terkontrol selama BUNKAI dianggap sebagai pelanggaran.",
+    "answer": "Benar",
+    "explanation": "Menyebabkan cedera akibat kurangnya kontrol teknik saat Bunkai dianggap sebagai pelanggaran (foul).",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Melempar koin adalah pilihan pertama untuk menyelesaikan pertandingan dalam kompetisi Kata.",
+    "answer": "Salah",
+    "explanation": "Coin toss adalah pilihan TERAKHIR untuk menyelesaikan seri dalam kompetisi Kata, bukan yang pertama.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Pergerakan transisi merupakan salah satu kriteria evaluasi Pertunjukan Kata, namun tidak untuk BUNKAI.",
+    "answer": "Salah",
+    "explanation": "Gerakan transisi (transitional movement) adalah kriteria evaluasi untuk Kata DAN Bunkai, bukan hanya Kata.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "BUNKAI harus dianggap sama pentingnya dengan Kata itu sendiri.",
+    "answer": "Benar",
+    "explanation": "Bunkai mendapat bobot penilaian yang sama pentingnya dengan Kata itu sendiri dalam kompetisi.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Melakukan Kata yang salah atau mengumumkan Kata yang salah akan mengakibatkan diskualifikasi.",
+    "answer": "Benar",
+    "explanation": "Menampilkan Kata yang salah atau mengumumkan nama Kata yang salah mengakibatkan diskualifikasi langsung.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Kata harus mulai menghadap para Juri.",
+    "answer": "Benar",
+    "explanation": "Penampilan Kata harus dimulai dengan menghadap para juri (Judge panel).",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Jika sabuk Atlet lepas saat menampilkan Kata, Atlet akan didiskualifikasi.",
+    "answer": "Salah",
+    "explanation": "Belt yang jatuh saat penampilan Kata hanya merupakan pelanggaran (foul), bukan diskualifikasi langsung.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Melebihi batas waktu total durasi 5 menit untuk Kata dan BUNKAI akan mengakibatkan diskualifikasi.",
+    "answer": "Benar",
+    "explanation": "Melebihi batas waktu total 5 menit untuk Kata dan Bunkai gabungan mengakibatkan diskualifikasi.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Hilangnya sedikit keseimbangan harus dipertimbangkan dalam evaluasi penampilan Kata.",
+    "answer": "Benar",
+    "explanation": "Kehilangan keseimbangan kecil (minor loss of balance) tetap harus dipertimbangkan dalam evaluasi penampilan Kata.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Gerakan asinkron, seperti menyampaikan teknik sebelum transisi tubuh selesai, dianggap sebagai pelanggaran.",
+    "answer": "Benar",
+    "explanation": "Gerakan yang tidak sinkron, seperti melakukan teknik sebelum transisi tubuh selesai, dianggap pelanggaran (foul).",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Di tim Kata, kegagalan melakukan gerakan secara serempak tidak dianggap sebagai pelanggaran.",
+    "answer": "Salah",
+    "explanation": "Kegagalan melakukan gerakan secara serentak (unison) dalam Kata beregu DIANGGAP pelanggaran (foul).",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Menghilangkan atau menambahkan gerakan, atau mengubah pertunjukan secara substansial dari bentuk aslinya, merupakan diskualifikasi.",
+    "answer": "Benar",
+    "explanation": "Menghilangkan atau menambah gerakan, atau mengubah penampilan secara substansial dari bentuk aslinya, mengakibatkan diskualifikasi.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Penggunaan senjata tradisional, perlengkapan tambahan atau pakaian tambahan diperbolehkan dalam kompetisi Kata.",
+    "answer": "Salah",
+    "explanation": "Penggunaan senjata tradisional, perlengkapan tambahan, atau pakaian tambahan sama sekali tidak diperbolehkan dalam kompetisi Kata.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Sabuk yang terlepas hingga terlepas dari pinggul selama pertunjukan adalah suatu pelanggaran.",
+    "answer": "Benar",
+    "explanation": "Belt yang terlepas hingga hampir jatuh dari pinggang saat penampilan merupakan pelanggaran (foul).",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Walaupun melakukan pukulan gunting (KANI BASAMI) pada area leher di BUNKAI dilarang, namun pukulan gunting pada badan diperbolehkan.",
+    "answer": "Benar",
+    "explanation": "Teknik gunting (Kani Basami) ke area leher dilarang dalam Bunkai, tetapi ke tubuh atau kaki diperbolehkan.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Dalam kompetisi Para-Karate, kontestan dari kategori Tunagrahita dapat menampilkan Kata yang sama di setiap babak.",
+    "answer": "Benar",
+    "explanation": "Dalam Para-Karate, atlet dari kategori Intellectually Impaired diperbolehkan menampilkan Kata yang sama di setiap babak.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Kompetisi Para-Karate terdiri dari Kata dan Kumite.",
+    "answer": "Salah",
+    "explanation": "Kompetisi Para-Karate hanya terdiri dari Kata saja, tidak termasuk Kumite.",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  },
+  {
+    "category": "kata",
+    "question": "Dalam Para-Karate, iklan di kursi roda dapat dipasang di sandaran.",
+    "answer": "Salah",
+    "explanation": "Iklan pada kursi roda dalam Para-Karate tidak boleh ditempatkan di sandaran punggung (backrest).",
+    "source": "Peraturan Kata WKF 2026",
+    "ref": "Sesuai Bab/Pasal KATA"
+  }
+]
