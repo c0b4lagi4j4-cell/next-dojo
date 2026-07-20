@@ -80,11 +80,29 @@ Perhatian: Saat ini Anda tidak terhubung dengan dokumen referensi WKF 2026. Oleh
       systemInstruction: systemPrompt,
     });
 
-    // Convert history to Gemini format
-    const geminiHistory = (history || []).map((h: { role: string; text: string }) => ({
-      role: h.role === 'user' ? 'user' : 'model',
-      parts: [{ text: h.text }],
-    }));
+    // Convert history to Gemini format with strict alternation (user -> model -> user)
+    const geminiHistory: any[] = [];
+    let expectedRole = 'user';
+
+    for (const h of (history || [])) {
+      const role = h.role === 'user' ? 'user' : 'model';
+      // Hanya proses jika text ada isinya untuk menghindari error kosong
+      if (!h.text || h.text.trim() === '') continue;
+
+      if (role === expectedRole) {
+        geminiHistory.push({ role, parts: [{ text: h.text }] });
+        expectedRole = expectedRole === 'user' ? 'model' : 'user';
+      } else {
+        // Jika ada role yang berurutan (misal user lalu user lagi), 
+        // gabungkan teksnya ke pesan sebelumnya agar Gemini tidak komplain.
+        if (geminiHistory.length > 0) {
+          geminiHistory[geminiHistory.length - 1].parts[0].text += '\n\n' + h.text;
+        } else if (role === 'model') {
+          // Jika pesan pertama dari history ternyata 'model', buang saja (karena harus diawali 'user')
+          continue; 
+        }
+      }
+    }
 
     const chatSession = model.startChat({
       history: geminiHistory,
