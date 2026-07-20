@@ -51,6 +51,9 @@ function getPdfContext(message: string): string {
              // Minify teks untuk hemat token: hilangkan spasi/enter ganda dan titik-titik daftar isi
              rawText = rawText.replace(/\.{3,}/g, '.');
              rawText = rawText.replace(/\s+/g, ' ');
+             // PANGKAS EKSTREM: Batasi maksimal 40.000 karakter (~10.000 token) per file
+             // Ini wajib dilakukan karena limit gratisan Groq sangat ketat (30.000 Token Per Menit)
+             rawText = rawText.substring(0, 40000);
              fileCache[file] = rawText.trim();
           }
           result += fileCache[file] + '\n';
