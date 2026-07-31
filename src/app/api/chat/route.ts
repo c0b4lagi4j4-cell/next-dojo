@@ -7,7 +7,7 @@ const apiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY || process.env.GEMINI_AP
 const genAI = new GoogleGenerativeAI(apiKey);
 
 // Using the recommended fast model for chat interactions
-const GEMINI_MODEL = 'gemini-3.5-flash';
+const GEMINI_MODEL = 'gemini-flash-latest';
 
 function getPdfContext(message: string): string {
   // Sistem pembacaan PDF dinonaktifkan sementara.
