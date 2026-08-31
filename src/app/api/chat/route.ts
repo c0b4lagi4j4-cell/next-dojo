@@ -1,20 +1,18 @@
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import OpenAI from 'openai';
 import fs from 'fs';
 import path from 'path';
 
-// Use the standard environment variable that Next.js and the Gemini SDK expect
-const apiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY || process.env.GEMINI_API_KEY || '';
-const genAI = new GoogleGenerativeAI(apiKey);
+// Inisialisasi SDK OpenAI menggunakan Alibaba Model Studio Compatible Endpoint
+const apiKey = process.env.ALIBABA_API_KEY || '';
+const baseURL = process.env.ALIBABA_BASE_URL || 'https://ws-2cnyb4gs661tyviv.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1';
 
-// Using the recommended fast model for chat interactions
-const GEMINI_MODEL = 'gemini-flash-latest';
+const openai = new OpenAI({
+  apiKey,
+  baseURL,
+});
 
-function getPdfContext(message: string): string {
-  // Sistem pembacaan PDF dinonaktifkan sementara.
-  // Untuk mengaktifkannya kembali dengan Gemini (yang memiliki token lebih besar),
-  // Anda bisa mengimplementasikan semantic search / vector DB di sini.
-  return '';
-}
+// Model rekomendasi Alibaba Cloud Qwen
+const ALIBABA_MODEL = 'qwen-plus';
 
 function containsBadWord(text: string): boolean {
   const badWords = ['tolol', 'bego', 'anjing', 'babi', 'goblok', 'bangsat', 'kontol', 'memek', 'ngentot', 'perek', 'pelacur'];
@@ -71,57 +69,30 @@ ONBOARDING:
 3. Jika keduanya sudah diketahui → baru mulai diskusi materi.
 4. Sesuaikan kedalaman penjelasan dengan tingkat sabuk (sabuk putih = dasar, sabuk hitam = teknis mendalam).
 
-ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF.
+ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF.`;
 
-Perhatian: Saat ini Anda tidak terhubung dengan dokumen referensi WKF 2026. Oleh karena itu, jika Anda ditanya mengenai detail spesifik pasal atau aturan kompetisi, JANGAN MENGARANG (HALU). Katakan dengan sopan bahwa sistem memori dokumen Anda sedang dibatasi sehingga Anda belum bisa memberikan jawaban spesifik WKF 2026.`;
+    // Construct messages array in standard OpenAI format
+    const messages: OpenAI.Chat.ChatCompletionMessageParam[] = [
+      { role: 'system', content: systemPrompt },
+      ...(history || []).map((h: { role: string; text: string }) => ({
+        role: h.role === 'user' ? ('user' as const) : ('assistant' as const),
+        content: h.text,
+      })),
+      { role: 'user', content: message },
+    ];
 
-    const model = genAI.getGenerativeModel({
-      model: GEMINI_MODEL,
-      systemInstruction: systemPrompt,
+    const response = await openai.chat.completions.create({
+      model: ALIBABA_MODEL,
+      messages,
+      temperature: 0.2,
+      max_tokens: 2048,
     });
 
-    // Convert history to Gemini format with strict alternation (user -> model -> user)
-    const geminiHistory: any[] = [];
-    let expectedRole = 'user';
-
-    for (const h of (history || [])) {
-      const role = h.role === 'user' ? 'user' : 'model';
-      // Hanya proses jika text ada isinya untuk menghindari error kosong
-      if (!h.text || h.text.trim() === '') continue;
-
-      if (role === expectedRole) {
-        geminiHistory.push({ role, parts: [{ text: h.text }] });
-        expectedRole = expectedRole === 'user' ? 'model' : 'user';
-      } else {
-        // Jika ada role yang berurutan (misal user lalu user lagi), 
-        // gabungkan teksnya ke pesan sebelumnya agar Gemini tidak komplain.
-        if (geminiHistory.length > 0) {
-          geminiHistory[geminiHistory.length - 1].parts[0].text += '\n\n' + h.text;
-        } else if (role === 'model') {
-          // Jika pesan pertama dari history ternyata 'model', buang saja (karena harus diawali 'user')
-          continue; 
-        }
-      }
-    }
-
-    const chatSession = model.startChat({
-      history: geminiHistory,
-      generationConfig: {
-        temperature: 0.2,
-        maxOutputTokens: 2048,
-      },
-    });
-
-    const result = await chatSession.sendMessage(message);
-    const reply = result.response.text();
-
+    const reply = response.choices[0]?.message?.content ?? '(Tidak ada respons dari AI)';
     return Response.json({ reply });
 
   } catch (err: any) {
     const msg = String(err?.message || err);
-    if (msg.includes('429') || msg.includes('quota') || msg.includes('rate_limit') || msg.includes('Rate limit')) {
-      return Response.json({ error: '429' }, { status: 429 });
-    }
     console.error('[API Error]', err);
     return Response.json({ error: 'unknown', details: msg }, { status: 500 });
   }
