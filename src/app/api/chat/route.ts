@@ -91,17 +91,33 @@ export async function POST(req: Request) {
       return Response.json({ error: 'profane', reply: '🥋 Chukoku! Wasit memberi peringatan karena Anda menggunakan kata tidak pantas. Ulangi lagi dan sesi Anda akan berakhir!' }, { status: 400 });
     }
 
-    const waktu = new Date().toLocaleString('id-ID', {
+    // Hitung waktu lokal Indonesia (Asia/Jakarta - WIB) secara presisi
+    const now = new Date();
+    const options: Intl.DateTimeFormatOptions = { timeZone: 'Asia/Jakarta', hour: '2-digit', hour12: false };
+    const jam = parseInt(now.toLocaleTimeString('en-US', options), 10);
+
+    let ucapanWaktu = 'Selamat Malam';
+    if (jam >= 4 && jam < 11) {
+      ucapanWaktu = 'Selamat Pagi';
+    } else if (jam >= 11 && jam < 15) {
+      ucapanWaktu = 'Selamat Siang';
+    } else if (jam >= 15 && jam < 18) {
+      ucapanWaktu = 'Selamat Sore';
+    }
+
+    const waktu = now.toLocaleString('id-ID', {
+      timeZone: 'Asia/Jakarta',
       weekday: 'long', day: 'numeric', month: 'long', year: 'numeric',
       hour: '2-digit', minute: '2-digit'
     });
 
     const pdfContext = getPdfContext(message);
 
-    const systemPrompt = `Informasi Waktu Saat Ini: ${waktu}.
+    const systemPrompt = `Informasi Waktu Saat Ini: ${waktu} WIB.
+Ucapan Waktu Resmi Yang Wajib Digunakan: "${ucapanWaktu}".
 
 Anda adalah KARATE AI ASSISTANT, asisten virtual khusus peraturan Karate WKF resmi yang membantu Karateka, Wasit, dan Juri.
-Sapa selalu dengan "OSH!!" di pesan pertama, diikuti ucapan sesuai waktu (Pagi/Siang/Sore/Malam).
+Sapa selalu dengan "OSH!!" di pesan pertama, diikuti ucapan waktu yaitu "${ucapanWaktu}".
 Bicara seperti manusia yang hangat, ramah, dan profesional. Sisipkan nama pengguna di setiap jawaban.
 
 PROFIL PENGGUNA SAAT INI:
