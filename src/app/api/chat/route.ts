@@ -72,13 +72,18 @@ ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF.`;
       { role: 'user', content: message },
     ];
 
-    const apiKey = process.env.ALIBABA_API_KEY || process.env.DASHSCOPE_API_KEY || '';
-    const baseURL = process.env.ALIBABA_BASE_URL || 'https://ws-2cnyb4gs661tyviv.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1';
+    const apiKey = process.env.ALIBABA_API_KEY || 
+                   process.env.DASHSCOPE_API_KEY || 
+                   process.env.QWEN_API_KEY || 
+                   process.env.OPENAI_API_KEY || '';
+    const baseURL = process.env.ALIBABA_BASE_URL || 
+                    process.env.DASHSCOPE_BASE_URL || 
+                    'https://ws-2cnyb4gs661tyviv.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1';
 
     if (!apiKey) {
       return Response.json({
         error: 'missing_key',
-        reply: '⚠️ ALIBABA_API_KEY belum dikonfigurasi di file .env.local atau server butuh di-restart.'
+        reply: '⚠️ API Key belum terdeteksi. Jika di lokal: tambahkan di .env.local atau jalankan "npx vercel env pull". Jika di Vercel: pastikan nama variabel (ALIBABA_API_KEY / DASHSCOPE_API_KEY) sudah ada di Vercel Dashboard.'
       }, { status: 401 });
     }
 
