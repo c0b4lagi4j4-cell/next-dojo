@@ -5,6 +5,58 @@ import path from 'path';
 // Model rekomendasi Alibaba Cloud Qwen
 const ALIBABA_MODEL = 'qwen-plus';
 
+function getPdfContext(query: string): string {
+  try {
+    const refDir = path.join(process.cwd(), 'referensi');
+    if (!fs.existsSync(refDir)) return '';
+
+    const files = [
+      'WKF 2026 Kumite Competition Rules MASTER COPY_V11.pdf.txt',
+      'WKF Kata Competition Rules 2026 MASTER COPY_V2.pdf.txt',
+      'WKF_GENERAL_REGULATIONS_vf.pdf.txt',
+      'WKF_Referee_Rules_2025.pdf.txt'
+    ];
+
+    const stopwords = new Set(['apa', 'siapa', 'mengapa', 'bagaimana', 'dimana', 'kapan', 'yang', 'dan', 'di', 'ke', 'dari', 'ini', 'itu', 'untuk', 'pada', 'adalah', 'akan', 'bisa', 'boleh', 'dengan', 'atau', 'pada', 'kah']);
+    const words = query.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(w => w.length > 2 && !stopwords.has(w));
+
+    if (words.length === 0) return '';
+
+    let chunks: { score: number; text: string; source: string }[] = [];
+
+    files.forEach(fileName => {
+      const filePath = path.join(refDir, fileName);
+      if (!fs.existsSync(filePath)) return;
+
+      const text = fs.readFileSync(filePath, 'utf-8');
+      const paragraphs = text.split(/\n\s*\n/);
+
+      paragraphs.forEach(p => {
+        if (p.trim().length < 40) return;
+        const lowerP = p.toLowerCase();
+        let score = 0;
+        words.forEach(w => {
+          if (lowerP.includes(w)) score += 1;
+        });
+
+        if (score > 0) {
+          chunks.push({ score, text: p.trim(), source: fileName });
+        }
+      });
+    });
+
+    chunks.sort((a, b) => b.score - a.score);
+    const topChunks = chunks.slice(0, 4);
+
+    if (topChunks.length === 0) return '';
+
+    return topChunks.map(c => `[Dokumen: ${c.source}]\n${c.text}`).join('\n\n---\n\n');
+  } catch (err) {
+    console.error('Error fetching PDF RAG context:', err);
+    return '';
+  }
+}
+
 function containsBadWord(text: string): boolean {
   const badWords = ['tolol', 'bego', 'anjing', 'babi', 'goblok', 'bangsat', 'kontol', 'memek', 'ngentot', 'perek', 'pelacur'];
   const lower = text.toLowerCase();
@@ -44,11 +96,13 @@ export async function POST(req: Request) {
       hour: '2-digit', minute: '2-digit'
     });
 
+    const pdfContext = getPdfContext(message);
+
     const systemPrompt = `Informasi Waktu Saat Ini: ${waktu}.
 
-Anda adalah KARATE AI ASSISTANT, asisten virtual khusus peraturan Karate WKF yang membantu Karateka, Wasit, dan Juri.
+Anda adalah KARATE AI ASSISTANT, asisten virtual khusus peraturan Karate WKF resmi yang membantu Karateka, Wasit, dan Juri.
 Sapa selalu dengan "OSH!!" di pesan pertama, diikuti ucapan sesuai waktu (Pagi/Siang/Sore/Malam).
-Bicara seperti manusia yang hangat, bukan seperti robot. Sisipkan nama pengguna di setiap jawaban.
+Bicara seperti manusia yang hangat, ramah, dan profesional. Sisipkan nama pengguna di setiap jawaban.
 
 PROFIL PENGGUNA SAAT INI:
 - Nama: ${userName || 'Belum diketahui'}
@@ -59,6 +113,14 @@ ONBOARDING:
 2. Jika nama sudah diketahui tapi sabuk belum → tanya tingkat sabuk/pengalaman.
 3. Jika keduanya sudah diketahui → baru mulai diskusi materi.
 4. Sesuaikan kedalaman penjelasan dengan tingkat sabuk (sabuk putih = dasar, sabuk hitam = teknis mendalam).
+
+DOKUMEN REFERENSI PERATURAN WKF TERKAIT SAAT INI:
+${pdfContext ? pdfContext : '(Tidak ada potongan dokumen spesifik yang terdeteksi, gunakan pengetahuan umum Karate WKF)'}
+
+PETUNJUK PENTING:
+- Jika DOKUMEN REFERENSI di atas ada isinya, UTAMAKAN jawaban berbasis dokumen resmi tersebut.
+- Kutip nomor pasal atau nama aturan jika tertera pada teks referensi.
+- Jangan pernah mengarang aturan yang bertentangan dengan dokumen referensi WKF di atas.
 
 ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF.`;
 
