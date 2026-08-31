@@ -72,8 +72,15 @@ ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF.`;
       { role: 'user', content: message },
     ];
 
-    const apiKey = process.env.ALIBABA_API_KEY || 'dummy_key_for_build';
+    const apiKey = process.env.ALIBABA_API_KEY || process.env.DASHSCOPE_API_KEY || '';
     const baseURL = process.env.ALIBABA_BASE_URL || 'https://ws-2cnyb4gs661tyviv.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1';
+
+    if (!apiKey) {
+      return Response.json({
+        error: 'missing_key',
+        reply: '⚠️ API Key Alibaba belum dimuat oleh server. Silakan matikan server lokal (Ctrl+C di terminal) lalu jalankan ulang "npm run dev".'
+      }, { status: 401 });
+    }
 
     const openai = new OpenAI({
       apiKey,
