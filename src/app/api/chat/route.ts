@@ -2,15 +2,6 @@ import OpenAI from 'openai';
 import fs from 'fs';
 import path from 'path';
 
-// Inisialisasi SDK OpenAI menggunakan Alibaba Model Studio Compatible Endpoint
-const apiKey = process.env.ALIBABA_API_KEY || '';
-const baseURL = process.env.ALIBABA_BASE_URL || 'https://ws-2cnyb4gs661tyviv.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1';
-
-const openai = new OpenAI({
-  apiKey,
-  baseURL,
-});
-
 // Model rekomendasi Alibaba Cloud Qwen
 const ALIBABA_MODEL = 'qwen-plus';
 
@@ -80,6 +71,14 @@ ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF.`;
       })),
       { role: 'user', content: message },
     ];
+
+    const apiKey = process.env.ALIBABA_API_KEY || 'dummy_key_for_build';
+    const baseURL = process.env.ALIBABA_BASE_URL || 'https://ws-2cnyb4gs661tyviv.ap-southeast-1.maas.aliyuncs.com/compatible-mode/v1';
+
+    const openai = new OpenAI({
+      apiKey,
+      baseURL,
+    });
 
     const response = await openai.chat.completions.create({
       model: ALIBABA_MODEL,
