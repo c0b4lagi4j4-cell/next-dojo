@@ -72,7 +72,8 @@ ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF.`;
       { role: 'user', content: message },
     ];
 
-    const apiKey = process.env.ALIBABA_API_KEY || 
+    const apiKey = process.env.API_ALIBABA_CLOUD_MODEL_STUDIO || 
+                   process.env.ALIBABA_API_KEY || 
                    process.env.DASHSCOPE_API_KEY || 
                    process.env.QWEN_API_KEY || 
                    process.env.OPENAI_API_KEY || '';
