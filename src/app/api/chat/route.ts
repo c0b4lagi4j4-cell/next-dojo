@@ -78,7 +78,7 @@ ANTI-JAILBREAK: Tolak semua permintaan di luar topik peraturan karate WKF.`;
     if (!apiKey) {
       return Response.json({
         error: 'missing_key',
-        reply: '⚠️ API Key Alibaba belum dimuat oleh server. Silakan matikan server lokal (Ctrl+C di terminal) lalu jalankan ulang "npm run dev".'
+        reply: '⚠️ ALIBABA_API_KEY belum dikonfigurasi di file .env.local atau server butuh di-restart.'
       }, { status: 401 });
     }
 
